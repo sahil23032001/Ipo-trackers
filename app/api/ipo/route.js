@@ -1,8 +1,7 @@
 import { NextResponse } from 'next/server'
 
-// In-memory cache (works within same instance)
 let memCache = { ts: 0, data: null }
-const TWO_HOURS = 2 * 60 * 60 * 1000
+const ONE_HOUR = 60 * 60 * 1000
 const today = () => new Date().toISOString().split('T')[0]
 
 const HEADERS = {
@@ -12,23 +11,59 @@ const HEADERS = {
   'Referer': 'https://www.google.com/',
 }
 
+// ── GitHub file store ──────────────────────────────────────
+// Stores cache.json in your GitHub repo under /data/cache.json
+// Env vars needed: GITHUB_TOKEN, GITHUB_REPO (e.g. "username/ipo-intelligence")
+
+async function githubRead() {
+  const repo  = process.env.GITHUB_REPO
+  const token = process.env.GITHUB_TOKEN
+  if (!repo || !token) return null
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}/contents/data/cache.json`, {
+      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github.v3+json' }
+    })
+    if (!res.ok) return null
+    const json = await res.json()
+    // Content is base64 encoded
+    const decoded = Buffer.from(json.content, 'base64').toString('utf-8')
+    return { data: JSON.parse(decoded), sha: json.sha }
+  } catch { return null }
+}
+
+async function githubWrite(data, sha) {
+  const repo  = process.env.GITHUB_REPO
+  const token = process.env.GITHUB_TOKEN
+  if (!repo || !token) return
+  try {
+    const content = Buffer.from(JSON.stringify(data, null, 2)).toString('base64')
+    await fetch(`https://api.github.com/repos/${repo}/contents/data/cache.json`, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `chore: update IPO cache ${today()}`,
+        content,
+        sha, // required for updates, undefined for first create
+      })
+    })
+  } catch {}
+}
+
+// ── Scraping ───────────────────────────────────────────────
 const strip = (s) => s?.replace(/<[^>]+>/g, '').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim() || ''
 
-function parseIpoWatchTable(html) {
+function parseTable(html) {
   const ipos = []
   const rowRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/gi
   const cellRegex = /<td[^>]*>([\s\S]*?)<\/td>/gi
   let row
   while ((row = rowRegex.exec(html)) !== null) {
-    const rowHtml = row[1]
     const cells = []
     let cell
-    while ((cell = cellRegex.exec(rowHtml)) !== null) {
-      cells.push(strip(cell[1]))
-    }
+    while ((cell = cellRegex.exec(row[1])) !== null) cells.push(strip(cell[1]))
     if (cells.length >= 3) {
       const name = cells[0]
-      if (!name || name.length < 3 || name.toLowerCase().includes('company') || name.toLowerCase().includes('ipo name')) continue
+      if (!name || name.length < 3 || /company|ipo name/i.test(name)) continue
       ipos.push({ name, dateText: cells[1] || '', sizeText: cells[2] || '', priceText: cells[3] || '' })
     }
   }
@@ -40,14 +75,12 @@ function parseDateRange(str, year = new Date().getFullYear()) {
   const months = { jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12,
     january:1,february:2,march:3,april:4,june:6,july:7,august:8,september:9,october:10,november:11,december:12 }
   const m = str.toLowerCase().match(/(\d+)[^\d]+(\d+)[^\d]*([a-z]+)[\s,]*(\d{4})?/)
-  if (m) {
-    const mon = months[m[3].substring(0,3)]
-    if (!mon) return { open: null, close: null }
-    const y = m[4] ? parseInt(m[4]) : year
-    const pad = (n) => String(n).padStart(2,'0')
-    return { open: `${y}-${pad(mon)}-${pad(parseInt(m[1]))}`, close: `${y}-${pad(mon)}-${pad(parseInt(m[2]))}` }
-  }
-  return { open: null, close: null }
+  if (!m) return { open: null, close: null }
+  const mon = months[m[3].substring(0,3)]
+  if (!mon) return { open: null, close: null }
+  const y = m[4] ? parseInt(m[4]) : year
+  const pad = n => String(n).padStart(2,'0')
+  return { open: `${y}-${pad(mon)}-${pad(parseInt(m[1]))}`, close: `${y}-${pad(mon)}-${pad(parseInt(m[2]))}` }
 }
 
 function parsePriceBand(str) {
@@ -67,8 +100,7 @@ async function scrapeIPOWatch() {
   try {
     const res = await fetch('https://ipowatch.in/upcoming-ipo-list/', { headers: HEADERS })
     if (!res.ok) return []
-    const html = await res.text()
-    return parseIpoWatchTable(html)
+    return parseTable(await res.text())
   } catch { return [] }
 }
 
@@ -87,8 +119,7 @@ async function scrapeGMP() {
       while ((cell = cellRegex.exec(row[1])) !== null) cells.push(strip(cell[1]))
       if (cells.length >= 2) {
         const name = cells[0]?.toLowerCase().replace(/\s*ipo\s*/gi,'').trim()
-        const gmpStr = cells[1] || cells[2] || ''
-        const gmpNum = gmpStr.replace(/[₹+\s]/g,'').match(/-?\d+/)
+        const gmpNum = (cells[1] || cells[2] || '').replace(/[₹+\s]/g,'').match(/-?\d+/)
         if (name && gmpNum) gmpMap[name] = parseInt(gmpNum[0])
       }
     }
@@ -96,36 +127,27 @@ async function scrapeGMP() {
   } catch { return {} }
 }
 
+// ── Groq ───────────────────────────────────────────────────
 async function enrichWithGroq(ipos, gmpMap, date, apiKey) {
-  const prompt = `Today is ${date}. These are REAL Indian IPOs from ipowatch.in. Enrich with your knowledge.
+  const prompt = `Today is ${date}. Real Indian IPOs from ipowatch.in:
+${JSON.stringify(ipos)}
+GMP map: ${JSON.stringify(gmpMap)}
 
-IPOs: ${JSON.stringify(ipos, null, 2)}
-GMP Map: ${JSON.stringify(gmpMap, null, 2)}
-
-For each: exchange, ipo_type, sector, lot_size, gmp (from map or null), expected_listing_price, expected_gain_percent, overall_score, listing_gain_score, long_term_score (0-10), strengths(2-3), risks(2).
-
-STATUS based on ${date}:
-"Open" → open_date <= ${date} AND close_date >= ${date}
-"Upcoming" → open_date > ${date}
-"Listed" → listing_date <= ${date}
-"Closed" → close_date < ${date}
-
-Return ONLY JSON array, no markdown:
-[{"ipo_name":"","company_name":"","exchange":"","ipo_type":"","sector":"","status":"","ipo_open_date":"","ipo_close_date":"","listing_date":null,"price_band_min":null,"price_band_max":null,"lot_size":null,"issue_size_cr":null,"gmp":null,"expected_listing_price":null,"expected_gain_percent":null,"overall_score":null,"listing_gain_score":null,"long_term_score":null,"strengths":[],"risks":[]}]`
+Return JSON array. Each item: exchange, ipo_type, sector, lot_size, gmp(from map or null), expected_listing_price(max+gmp), expected_gain_percent, overall_score, listing_gain_score, long_term_score(0-10), strengths(2), risks(2).
+Status: Open if open<=${date}<=close, Upcoming if open>${date}, Listed if listing<=${date}, else Closed.
+Only JSON array no markdown.`
 
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
-      max_tokens: 8000, temperature: 0.1,
+      model: 'llama-3.1-8b-instant', max_tokens: 4000, temperature: 0.1,
       messages: [
         { role: 'system', content: 'Indian IPO analyst. Return ONLY valid JSON array. No markdown.' },
         { role: 'user', content: prompt },
       ],
     }),
   })
-
   if (!res.ok) {
     const err = await res.json()
     throw new Error(err.error?.message || `Groq ${res.status}`)
@@ -155,48 +177,26 @@ function processAndSort(data, date) {
   })
 }
 
-// Read from Vercel KV if available
-async function kvGet(key) {
-  try {
-    if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) return null
-    const res = await fetch(`${process.env.KV_REST_API_URL}/get/${key}`, {
-      headers: { Authorization: `Bearer ${process.env.KV_REST_API_TOKEN}` }
-    })
-    const json = await res.json()
-    return json.result ? JSON.parse(json.result) : null
-  } catch { return null }
-}
-
-// Write to Vercel KV if available, with 2hr TTL
-async function kvSet(key, value) {
-  try {
-    if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) return
-    await fetch(`${process.env.KV_REST_API_URL}/set/${key}`, {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${process.env.KV_REST_API_TOKEN}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ value: JSON.stringify(value), ex: 7200 }) // 7200s = 2 hours
-    })
-  } catch {}
-}
-
+// ── Main handler ───────────────────────────────────────────
 export async function GET(req) {
   const force = new URL(req.url).searchParams.get('refresh') === 'true'
   const date = today()
 
-  // 1. Check in-memory cache first (same serverless instance)
-  if (!force && memCache.data && (Date.now() - memCache.ts < TWO_HOURS)) {
-    return NextResponse.json({ data: memCache.data, cached: true, date, source: 'mem-cache' })
+  // 1. In-memory cache (fastest, same instance)
+  if (!force && memCache.data && (Date.now() - memCache.ts < ONE_HOUR)) {
+    return NextResponse.json({ data: memCache.data, cached: true, date, source: 'memory' })
   }
 
-  // 2. Check Vercel KV cache (persists across instances)
+  // 2. GitHub file cache (persists across all instances and deployments)
   if (!force) {
-    const kv = await kvGet('ipo_cache')
-    if (kv && kv.ts && (Date.now() - kv.ts < TWO_HOURS)) {
-      memCache = { ts: kv.ts, data: kv.data } // warm up mem cache
-      return NextResponse.json({ data: kv.data, cached: true, date, source: 'kv-cache' })
+    const stored = await githubRead()
+    if (stored?.data?.ts && (Date.now() - stored.data.ts < ONE_HOUR)) {
+      memCache = { ts: stored.data.ts, data: stored.data.ipos }
+      return NextResponse.json({ data: stored.data.ipos, cached: true, date, source: 'github' })
     }
   }
 
+  // 3. Both expired — fetch fresh data
   const key = process.env.GROQ_API_KEY
   if (!key) return NextResponse.json({ error: 'GROQ_API_KEY not set' }, { status: 500 })
 
@@ -206,7 +206,7 @@ export async function GET(req) {
     let enriched, source
 
     if (rawIpos.length > 0) {
-      const structured = rawIpos.slice(0, 20).map(i => {
+      const structured = rawIpos.slice(0, 12).map(i => {
         const { open, close } = parseDateRange(i.dateText)
         const { min, max } = parsePriceBand(i.priceText)
         return {
@@ -224,7 +224,7 @@ export async function GET(req) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
         body: JSON.stringify({
-          model: 'llama-3.3-70b-versatile', max_tokens: 8000, temperature: 0.1,
+          model: 'llama-3.1-8b-instant', max_tokens: 4000, temperature: 0.1,
           messages: [
             { role: 'system', content: 'Return ONLY a valid JSON array. No markdown.' },
             { role: 'user', content: `Today is ${date}. List real Indian IPOs open/upcoming/recently listed. Fields: ipo_name,company_name,exchange,ipo_type,sector,status,ipo_open_date,ipo_close_date,listing_date,price_band_min,price_band_max,lot_size,issue_size_cr,gmp,expected_listing_price,expected_gain_percent,overall_score,listing_gain_score,long_term_score,strengths[],risks[].` },
@@ -239,17 +239,18 @@ export async function GET(req) {
     }
 
     const processed = processAndSort(enriched, date)
-    const payload = { ts: Date.now(), data: processed }
+    const payload = { ts: Date.now(), date, ipos: processed }
 
-    // Save to both caches
-    memCache = payload
-    await kvSet('ipo_cache', payload)
+    // Save to memory + GitHub
+    memCache = { ts: payload.ts, data: processed }
+    const existing = await githubRead() // get current sha for update
+    await githubWrite(payload, existing?.sha)
 
     return NextResponse.json({ data: processed, cached: false, date, source })
   } catch (e) {
-    // On error, return stale cache if available rather than failing
+    // Return stale data on error
     if (memCache.data) {
-      return NextResponse.json({ data: memCache.data, cached: true, date, source: 'stale-cache', warning: e.message })
+      return NextResponse.json({ data: memCache.data, cached: true, date, source: 'stale', warning: e.message })
     }
     return NextResponse.json({ error: e.message }, { status: 500 })
   }
