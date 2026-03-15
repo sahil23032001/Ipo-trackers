@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/ipos/:id", "destination": "/api/ipo?id=:id" },
+    { "source": "/api/ipos",     "destination": "/api/ipos" },
+    { "source": "/(.*)",          "destination": "/index.html" }
+  ]
+}
