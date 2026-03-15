@@ -220,7 +220,7 @@ export default function Page() {
 
   useEffect(() => {
     load()
-    const interval = setInterval(() => load(true), 2 * 60 * 60 * 1000)
+    const interval = setInterval(() => load(), 12 * 60 * 60 * 1000)
     return () => clearInterval(interval)
   }, [])
 
