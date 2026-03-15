@@ -140,7 +140,7 @@ function IPOModal({ ipo, onClose }) {
         <div style={{ height: 3, background: `linear-gradient(90deg, ${tc}, ${tc}00)`, borderRadius: '20px 20px 0 0' }} />
 
         {/* sticky header */}
-        <div style={{ padding: '20px 24px 16px', borderBottom: '1px solid #162032', position: 'sticky', top: 0, background: '#0a1120', zIndex: 1 }}>
+        <div className="modal-header" style={{ padding: '20px 24px 16px', borderBottom: '1px solid #162032', position: 'sticky', top: 0, background: '#0a1120', zIndex: 1 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 }}>
             <div style={{ flex: 1 }}>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 8 }}>
@@ -155,7 +155,7 @@ function IPOModal({ ipo, onClose }) {
               <span style={{ fontSize: 9, color: '#475569', textTransform: 'uppercase', letterSpacing: 0.5 }}>AI Score</span>
             </div>
           </div>
-          <button onClick={onClose} style={{ position: 'absolute', top: 16, right: 16, background: '#162032', border: '1px solid #1e2d4a', color: '#6b7280', borderRadius: 8, width: 30, height: 30, cursor: 'pointer', fontSize: 18, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>×</button>
+          <button onClick={onClose} className="modal-close">×</button>
         </div>
 
         <div style={{ padding: '20px 24px' }}>
@@ -289,6 +289,9 @@ export default function Page() {
         @keyframes spin { to { transform: rotate(360deg); } }
         @keyframes rise { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
         .card-ani { animation: rise 0.3s ease both; }
+        .modal-close { position: absolute; top: 16px; right: 16px; background: #162032; border: 1px solid #1e2d4a; color: #6b7280; border-radius: 8px; width: 30px; height: 30px; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s, background 0.2s; font-family: inherit; }
+        .modal-close:hover { background: #1e2d4a; color: #94a3b8; opacity: 1 !important; }
+        .modal-header:hover .modal-close { opacity: 1; }
       `}</style>
 
       {/* Nav */}
