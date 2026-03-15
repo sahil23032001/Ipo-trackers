@@ -1,21 +1,16 @@
-// ── Budget: 25 API requests per day (free tier, limit=1 per request) ────────
-// Strategy:
-//   - All 4 statuses share a single daily fetch cycle
-//   - On first request, we figure out total pages across all statuses,
-//     then distribute remaining budget proportionally
-//   - Everything is cached for 24 hours — zero API calls after initial load
-//   - If budget runs out mid-fetch, we stop and serve what we have
+// Budget: 25 API requests per day (free tier, limit=1 per request)
+// CommonJS format for Vercel compatibility
 
-const cache  = new Map(); // 'all' → { byStatus, fetchedAt }
+const cache  = new Map();
 const TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
 const DAILY_BUDGET = 25;
-const DELAY  = 200; // ms between requests
+const DELAY  = 200;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function fetchPage(status, page, apiKey) {
   const params = new URLSearchParams({ status, page, limit: 1 });
-  const res  = await fetch(`https://api.ipoalerts.in/ipos?${params}`, {
+  const res = await fetch(`https://api.ipoalerts.in/ipos?${params}`, {
     headers: { 'x-api-key': apiKey, 'Content-Type': 'application/json' }
   });
   return res.json();
@@ -26,27 +21,19 @@ async function fetchAllStatuses(apiKey) {
   const byStatus = {};
   let requestsUsed = 0;
 
-  // ── Phase 1: probe each status (4 requests) to get total page counts ──
+  // Phase 1: probe each status (4 requests) to get total page counts
   const probeCounts = {};
   for (const status of statuses) {
     if (requestsUsed >= DAILY_BUDGET) break;
     const data = await fetchPage(status, 1, apiKey);
     requestsUsed++;
-    probeCounts[status] = {
-      totalPages: data.meta?.totalPages || 1,
-      firstIpo:   data.ipos || []
-    };
+    probeCounts[status] = { totalPages: data.meta?.totalPages || 1 };
     byStatus[status] = [...(data.ipos || [])];
     await sleep(DELAY);
   }
 
-  // ── Phase 2: distribute remaining budget proportionally ───────────────
-  const remaining = DAILY_BUDGET - requestsUsed; // e.g. 21 left
-  const totalExtraPages = statuses.reduce((sum, s) => {
-    return sum + Math.max(0, (probeCounts[s]?.totalPages || 1) - 1);
-  }, 0);
-
-  // Build a flat queue of (status, page) pairs ordered by priority (open first)
+  // Phase 2: distribute remaining budget across pages
+  const remaining = DAILY_BUDGET - requestsUsed;
   const queue = [];
   for (const status of statuses) {
     const total = probeCounts[status]?.totalPages || 1;
@@ -55,7 +42,6 @@ async function fetchAllStatuses(apiKey) {
     }
   }
 
-  // Fetch up to the remaining budget
   const toFetch = queue.slice(0, remaining);
   for (const { status, page } of toFetch) {
     if (requestsUsed >= DAILY_BUDGET) break;
@@ -67,10 +53,10 @@ async function fetchAllStatuses(apiKey) {
     }
   }
 
-  return { byStatus, requestsUsed, totalExtraPages };
+  return { byStatus, requestsUsed };
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(200).end();
@@ -82,34 +68,29 @@ export default async function handler(req, res) {
   const now    = Date.now();
   const cached = cache.get('all');
 
-  // ── Serve from cache if still fresh (24h) ──────────────────────────────
+  // Serve from cache if still fresh (24h)
   if (cached && now - cached.fetchedAt < TTL_MS) {
     const ageMin    = Math.floor((now - cached.fetchedAt) / 1000 / 60);
     const expiresIn = Math.ceil((TTL_MS - (now - cached.fetchedAt)) / 1000 / 60);
     const ipos      = cached.byStatus[status] || [];
-    res.setHeader('X-Cache',           'HIT');
-    res.setHeader('X-Cache-Age',       `${ageMin}m`);
-    res.setHeader('X-Cache-Expires',   `${expiresIn}m`);
-    res.setHeader('X-IPO-Count',       String(ipos.length));
-    res.setHeader('X-Requests-Used',   String(cached.requestsUsed));
+    res.setHeader('X-Cache',         'HIT');
+    res.setHeader('X-Cache-Age',     `${ageMin}m`);
+    res.setHeader('X-Cache-Expires', `${expiresIn}m`);
+    res.setHeader('X-IPO-Count',     String(ipos.length));
     return res.status(200).json({ ipos, meta: { count: ipos.length } });
   }
 
-  // ── Cache miss — run full daily fetch ─────────────────────────────────
+  // Cache miss — run full daily fetch
   try {
-    const { byStatus, requestsUsed, totalExtraPages } = await fetchAllStatuses(API_KEY);
-
+    const { byStatus, requestsUsed } = await fetchAllStatuses(API_KEY);
     cache.set('all', { byStatus, fetchedAt: now, requestsUsed });
 
     const ipos = byStatus[status] || [];
-    const truncated = (DAILY_BUDGET - 4) < totalExtraPages; // did we run out?
-
-    res.setHeader('X-Cache',           'MISS');
-    res.setHeader('X-Cache-Expires',   '1440m');
-    res.setHeader('X-IPO-Count',       String(ipos.length));
-    res.setHeader('X-Requests-Used',   String(requestsUsed));
-    res.setHeader('X-Budget-Truncated', String(truncated));
-    return res.status(200).json({ ipos, meta: { count: ipos.length, truncated } });
+    res.setHeader('X-Cache',       'MISS');
+    res.setHeader('X-Cache-Expires','1440m');
+    res.setHeader('X-IPO-Count',   String(ipos.length));
+    res.setHeader('X-Requests-Used', String(requestsUsed));
+    return res.status(200).json({ ipos, meta: { count: ipos.length } });
 
   } catch (err) {
     if (cached) {
@@ -122,4 +103,4 @@ export default async function handler(req, res) {
     }
     return res.status(500).json({ error: 'Failed to fetch IPO data', detail: err.message });
   }
-}
+};
