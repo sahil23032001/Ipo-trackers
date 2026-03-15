@@ -1,13 +1,16 @@
-const cache = new Map();
-const TTL_MS = 60 * 60 * 1000; // 1 hour
+// Single IPO detail — CommonJS format for Vercel compatibility
 
-export default async function handler(req, res) {
+const cache  = new Map();
+const TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
+
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(200).end();
 
   const API_KEY = process.env.IPO_API_KEY;
   if (!API_KEY) return res.status(500).json({ error: 'IPO_API_KEY env variable not set' });
+
   const { id } = req.query;
   if (!id) return res.status(400).json({ error: 'Missing id' });
 
@@ -34,4 +37,4 @@ export default async function handler(req, res) {
     }
     return res.status(500).json({ error: 'Failed to fetch IPO detail', detail: err.message });
   }
-}
+};
