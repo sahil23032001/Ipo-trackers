@@ -344,7 +344,7 @@ export default function Page() {
             </div>
           </div>
           <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}>
-            <span style={{ fontSize: 10, color: '#334155', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, marginRight: 4 }}>Status</span>
+            <span style={{ fontSize: 10, color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, marginRight: 4 }}>Status</span>
             {['All','Open','Upcoming','Listed','Closed'].map(s => {
               const active = status === s
               const cfg = STATUS[s] || {}
@@ -352,14 +352,14 @@ export default function Page() {
                 <button key={s} onClick={() => setStatus(s)} style={{
                   padding: '6px 14px', borderRadius: 999, fontSize: 12, fontWeight: 700, cursor: 'pointer',
                   background: active ? (cfg.bg || '#ffffff15') : 'transparent',
-                  color: active ? (cfg.color || '#f1f5f9') : '#475569',
-                  border: `1px solid ${active ? (cfg.border || '#ffffff30') : '#162032'}`,
+                  color: active ? (cfg.color || '#f1f5f9') : '#94a3b8',
+                  border: `1px solid ${active ? (cfg.border || '#ffffff30') : '#1e2d4a'}`,
                   transition: 'all 0.15s',
                 }}>{s}</button>
               )
             })}
-            <div style={{ width: 1, height: 18, background: '#162032', margin: '0 6px' }} />
-            <span style={{ fontSize: 10, color: '#334155', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, marginRight: 4 }}>Type</span>
+            <div style={{ width: 1, height: 18, background: '#1e2d4a', margin: '0 6px' }} />
+            <span style={{ fontSize: 10, color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.5, marginRight: 4 }}>Type</span>
             {['All','Mainboard','SME','InvIT','REIT'].map(t => {
               const active = type === t
               const tc = TYPE_COLOR[t] || '#6b7280'
@@ -367,8 +367,8 @@ export default function Page() {
                 <button key={t} onClick={() => setType(t)} style={{
                   padding: '6px 13px', borderRadius: 999, fontSize: 11, fontWeight: 700, cursor: 'pointer',
                   background: active ? `${tc}20` : 'transparent',
-                  color: active ? tc : '#334155',
-                  border: `1px solid ${active ? `${tc}40` : '#0f1e35'}`,
+                  color: active ? tc : '#94a3b8',
+                  border: `1px solid ${active ? `${tc}40` : '#1e2d4a'}`,
                   transition: 'all 0.15s',
                 }}>{t}</button>
               )
