@@ -218,11 +218,7 @@ export default function Page() {
     finally { setLoading(false) }
   }
 
-  useEffect(() => {
-    load()
-    const interval = setInterval(() => load(true), 2 * 60 * 60 * 1000)
-    return () => clearInterval(interval)
-  }, [])
+  useEffect(() => { load() }, [])
 
   const filtered = ipos.filter(ipo => {
     const q = search.toLowerCase()
