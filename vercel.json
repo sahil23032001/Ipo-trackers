@@ -1,7 +1,7 @@
 {
   "functions": {
-    "api/ipos.js": { "runtime": "@vercel/node@3" },
-    "api/ipo.js":  { "runtime": "@vercel/node@3" }
+    "api/ipos.js": { "runtime": "nodejs24.x" },
+    "api/ipo.js":  { "runtime": "nodejs24.x" }
   },
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
