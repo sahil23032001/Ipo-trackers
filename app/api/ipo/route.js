@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const TWO_HOURS = 2 * 60 * 60 * 1000
-let cache = { ts: 0, data: null, date: null }
+let cache = { date: null, data: null }
 const today = () => new Date().toISOString().split('T')[0]
 
 const HEADERS = {
@@ -205,7 +204,7 @@ export async function GET(req) {
   const force = new URL(req.url).searchParams.get('refresh') === 'true'
   const date = today()
 
-  if (!force && cache.data && (Date.now() - cache.ts < TWO_HOURS)) {
+  if (!force && cache.date === date && cache.data) {
     return NextResponse.json({ data: cache.data, cached: true, date, source: 'cache' })
   }
 
@@ -259,7 +258,7 @@ export async function GET(req) {
     }
 
     const processed = correctStatuses(enriched, date)
-    cache = { ts: Date.now(), date, data: processed }
+    cache = { date, data: processed }
     return NextResponse.json({ data: processed, cached: false, date, source })
   } catch (e) {
     return NextResponse.json({ error: e.message }, { status: 500 })
