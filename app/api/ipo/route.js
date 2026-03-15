@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
 let memCache = { ts: 0, data: null }
-const ONE_HOUR = 60 * 60 * 1000
+const TWELVE_HOURS = 12 * 60 * 60 * 1000
 const today = () => new Date().toISOString().split('T')[0]
 
 const HEADERS = {
@@ -213,14 +213,14 @@ export async function GET(req) {
   const date = today()
 
   // 1. In-memory cache (fastest, same instance)
-  if (!force && memCache.data && (Date.now() - memCache.ts < ONE_HOUR)) {
+  if (!force && memCache.data && (Date.now() - memCache.ts < TWELVE_HOURS)) {
     return NextResponse.json({ data: memCache.data, cached: true, date, source: 'memory' })
   }
 
   // 2. GitHub file cache (persists across all instances and deployments)
   if (!force) {
     const stored = await githubRead()
-    if (stored?.data?.ts && (Date.now() - stored.data.ts < ONE_HOUR)) {
+    if (stored?.data?.ts && (Date.now() - stored.data.ts < TWELVE_HOURS)) {
       memCache = { ts: stored.data.ts, data: stored.data.ipos }
       return NextResponse.json({ data: stored.data.ipos, cached: true, date, source: 'github' })
     }
