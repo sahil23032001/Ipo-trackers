@@ -1,5 +1,354 @@
 {
-  "ts": 0,
-  "date": "",
-  "ipos": []
+  "ts": 1773585205417,
+  "date": "2026-03-15",
+  "ipos": [
+    {
+      "ipo_name": "Amir Chand IPO",
+      "company_name": "Amir Chand",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Unknown",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": null,
+      "price_band_max": null,
+      "lot_size": 100,
+      "issue_size_cr": 440,
+      "gmp": 0,
+      "expected_listing_price": null,
+      "expected_gain_percent": null,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
+      "strengths": [
+        "Unknown",
+        "Unknown"
+      ],
+      "risks": [
+        "Unknown",
+        "Unknown"
+      ]
+    },
+    {
+      "ipo_name": "Central Mine Planning IPO",
+      "company_name": "Central Mine Planning",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Mining",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": null,
+      "price_band_max": null,
+      "lot_size": 100,
+      "issue_size_cr": null,
+      "gmp": 20,
+      "expected_listing_price": null,
+      "expected_gain_percent": null,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
+      "strengths": [
+        "Experienced Management",
+        "Strong Sector"
+      ],
+      "risks": [
+        "Regulatory Risks",
+        "Market Volatility"
+      ]
+    },
+    {
+      "ipo_name": "GSP Crop Science IPO",
+      "company_name": "GSP Crop Science",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Agriculture",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 304,
+      "price_band_max": 320,
+      "lot_size": 100,
+      "issue_size_cr": 400,
+      "gmp": 0,
+      "expected_listing_price": 320,
+      "expected_gain_percent": 0,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "Raajmarg Infra InvIT IPO",
+      "company_name": "Raajmarg Infra",
+      "exchange": "BSE",
+      "ipo_type": "InvIT",
+      "sector": "Infrastructure",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 99,
+      "price_band_max": 100,
+      "lot_size": 100,
+      "issue_size_cr": 6000,
+      "gmp": 3,
+      "expected_listing_price": 103,
+      "expected_gain_percent": 3,
+      "overall_score": 7,
+      "listing_gain_score": 7,
+      "long_term_score": 7,
+      "strengths": [
+        "Strong Infrastructure Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Regulatory Risks",
+        "Market Volatility"
+      ]
+    },
+    {
+      "ipo_name": "Innovision IPO",
+      "company_name": "Innovision",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Technology",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 494,
+      "price_band_max": 519,
+      "lot_size": 100,
+      "issue_size_cr": 306,
+      "gmp": 7,
+      "expected_listing_price": 526,
+      "expected_gain_percent": 1.3,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "Rajputana Stainless IPO",
+      "company_name": "Rajputana Stainless",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Metals",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 116,
+      "price_band_max": 122,
+      "lot_size": 100,
+      "issue_size_cr": 255,
+      "gmp": 2,
+      "expected_listing_price": 124,
+      "expected_gain_percent": 1.6,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "SEDEMAC Mechatronics IPO",
+      "company_name": "SEDEMAC Mechatronics",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Automobile",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 1287,
+      "price_band_max": 1352,
+      "lot_size": 100,
+      "issue_size_cr": 1087.45,
+      "gmp": 1352,
+      "expected_listing_price": 2704,
+      "expected_gain_percent": 100,
+      "overall_score": 8,
+      "listing_gain_score": 8,
+      "long_term_score": 8,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "Omnitech Engineering IPO",
+      "company_name": "Omnitech Engineering",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Engineering",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 216,
+      "price_band_max": 227,
+      "lot_size": 100,
+      "issue_size_cr": 583,
+      "gmp": 227,
+      "expected_listing_price": 454,
+      "expected_gain_percent": 100,
+      "overall_score": 7,
+      "listing_gain_score": 7,
+      "long_term_score": 7,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "PNGS Reva Diamond IPO",
+      "company_name": "PNGS Reva Diamond",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Gem and Jewellery",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 367,
+      "price_band_max": 386,
+      "lot_size": 100,
+      "issue_size_cr": 380,
+      "gmp": 386,
+      "expected_listing_price": 772,
+      "expected_gain_percent": 100,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "Clean Max Enviro IPO",
+      "company_name": "Clean Max Enviro",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Renewable Energy",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 1000,
+      "price_band_max": 1053,
+      "lot_size": 100,
+      "issue_size_cr": 3100,
+      "gmp": 1053,
+      "expected_listing_price": 2106,
+      "expected_gain_percent": 100,
+      "overall_score": 8,
+      "listing_gain_score": 8,
+      "long_term_score": 8,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "Shree Ram Twistex IPO",
+      "company_name": "Shree Ram Twistex",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Textile",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 95,
+      "price_band_max": 104,
+      "lot_size": 100,
+      "issue_size_cr": 110.2,
+      "gmp": 104,
+      "expected_listing_price": 208,
+      "expected_gain_percent": 100,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    },
+    {
+      "ipo_name": "Gaudium IVF IPO",
+      "company_name": "Gaudium IVF",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Healthcare",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": 75,
+      "price_band_max": 79,
+      "lot_size": 100,
+      "issue_size_cr": 165,
+      "gmp": 79,
+      "expected_listing_price": 158,
+      "expected_gain_percent": 100,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
+      "strengths": [
+        "Strong Product Portfolio",
+        "Experienced Management"
+      ],
+      "risks": [
+        "Market Competition",
+        "Regulatory Risks"
+      ]
+    }
+  ]
 }
