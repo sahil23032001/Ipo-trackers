@@ -129,21 +129,51 @@ async function scrapeGMP() {
 
 // ── Groq ───────────────────────────────────────────────────
 async function enrichWithGroq(ipos, gmpMap, date, apiKey) {
-  const prompt = `Today is ${date}. Real Indian IPOs from ipowatch.in:
-${JSON.stringify(ipos)}
-GMP map: ${JSON.stringify(gmpMap)}
+  // Build a compact list — names + dates only, keep prompt small
+  const ipoList = ipos.map((i, idx) => `${idx+1}. ${i.ipo_name} | open:${i.ipo_open_date} | close:${i.ipo_close_date} | band:${i.price_band_min||'?'}-${i.price_band_max||'?'} | size:${i.issue_size_cr||'?'}Cr`).join('\n')
+  const gmpList = Object.entries(gmpMap).map(([k,v]) => `${k}:₹${v}`).join(', ')
 
-Return JSON array. Each item: exchange, ipo_type, sector, lot_size, gmp(from map or null), expected_listing_price(max+gmp), expected_gain_percent, overall_score, listing_gain_score, long_term_score(0-10), strengths(2), risks(2).
-Status: Open if open<=${date}<=close, Upcoming if open>${date}, Listed if listing<=${date}, else Closed.
-Only JSON array no markdown.`
+  const prompt = `Today is ${date}.
+
+These are REAL Indian IPOs scraped from ipowatch.in right now:
+${ipoList}
+
+GMP data: ${gmpList || 'none available'}
+
+For EACH IPO above return a JSON object with these exact fields. Use your knowledge about each company:
+- ipo_name: exact name from list above
+- company_name: full legal name
+- exchange: "NSE" or "BSE" or "BOTH"
+- ipo_type: "Mainboard" or "SME" or "InvIT" or "REIT"  
+- sector: company sector
+- status: "Open" if ${date} is between open and close date, "Upcoming" if opens after ${date}, "Listed" if listing date <= ${date}, "Closed" otherwise
+- ipo_open_date: from list above
+- ipo_close_date: from list above
+- listing_date: expected listing date or null
+- price_band_min: number from list above or null
+- price_band_max: number from list above or null
+- lot_size: realistic lot size number
+- issue_size_cr: from list above or null
+- gmp: match company name in GMP data (fuzzy) or null
+- expected_listing_price: price_band_max + gmp, or null
+- expected_gain_percent: round((gmp/price_band_max)*100, 1) or null
+- overall_score: your rating 0-10
+- listing_gain_score: 0-10
+- long_term_score: 0-10
+- strengths: array of 2 short strings
+- risks: array of 2 short strings
+
+Return ONLY the JSON array. No markdown. No explanation.`
 
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
-      model: 'llama-3.1-8b-instant', max_tokens: 4000, temperature: 0.1,
+      model: 'llama-3.3-70b-versatile',
+      max_tokens: 6000,
+      temperature: 0.1,
       messages: [
-        { role: 'system', content: 'Indian IPO analyst. Return ONLY valid JSON array. No markdown.' },
+        { role: 'system', content: 'You are an Indian IPO data analyst. Return ONLY a valid JSON array. No markdown, no code fences, no explanation.' },
         { role: 'user', content: prompt },
       ],
     }),
@@ -224,7 +254,7 @@ export async function GET(req) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
         body: JSON.stringify({
-          model: 'llama-3.1-8b-instant', max_tokens: 4000, temperature: 0.1,
+          model: 'llama-3.3-70b-versatile', max_tokens: 6000, temperature: 0.1,
           messages: [
             { role: 'system', content: 'Return ONLY a valid JSON array. No markdown.' },
             { role: 'user', content: `Today is ${date}. List real Indian IPOs open/upcoming/recently listed. Fields: ipo_name,company_name,exchange,ipo_type,sector,status,ipo_open_date,ipo_close_date,listing_date,price_band_min,price_band_max,lot_size,issue_size_cr,gmp,expected_listing_price,expected_gain_percent,overall_score,listing_gain_score,long_term_score,strengths[],risks[].` },
