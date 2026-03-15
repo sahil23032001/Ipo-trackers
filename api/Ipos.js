@@ -8,7 +8,8 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(200).end();
 
-  const API_KEY = process.env.IPO_API_KEY || '413b303e8337410c96de60c8bd32a1ec75ba50c2c7199ee635b56f1105429472';
+  const API_KEY = process.env.IPO_API_KEY;
+  if (!API_KEY) return res.status(500).json({ error: 'IPO_API_KEY env variable not set' });
   const { status = 'open', type, page = 1, limit = 50 } = req.query;
 
   // Cache key — unique per status + type combo
