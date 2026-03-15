@@ -169,7 +169,7 @@ Return ONLY the JSON array. No markdown. No explanation.`
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
-      model: 'gemma2-9b-it',
+      model: 'llama-3.3-70b-versatile',
       max_tokens: 6000,
       temperature: 0.1,
       messages: [
@@ -254,7 +254,7 @@ export async function GET(req) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
         body: JSON.stringify({
-          model: 'gemma2-9b-it', max_tokens: 6000, temperature: 0.1,
+          model: 'llama-3.3-70b-versatile', max_tokens: 6000, temperature: 0.1,
           messages: [
             { role: 'system', content: 'Return ONLY a valid JSON array. No markdown.' },
             { role: 'user', content: `Today is ${date}. List real Indian IPOs open/upcoming/recently listed. Fields: ipo_name,company_name,exchange,ipo_type,sector,status,ipo_open_date,ipo_close_date,listing_date,price_band_min,price_band_max,lot_size,issue_size_cr,gmp,expected_listing_price,expected_gain_percent,overall_score,listing_gain_score,long_term_score,strengths[],risks[].` },
