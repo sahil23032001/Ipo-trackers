@@ -1,8 +1,4 @@
 {
-  "functions": {
-    "api/ipos.js": { "runtime": "nodejs24.x" },
-    "api/ipo.js":  { "runtime": "nodejs24.x" }
-  },
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
