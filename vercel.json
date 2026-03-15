@@ -1,13 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/ipos.js", "use": "@vercel/node" },
-    { "src": "api/ipo.js", "use": "@vercel/node" },
-    { "src": "index.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/api/ipos", "dest": "/api/ipos.js" },
-    { "src": "/api/ipo", "dest": "/api/ipo.js" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "functions": {
+    "api/ipos.js": { "runtime": "@vercel/node@3" },
+    "api/ipo.js":  { "runtime": "@vercel/node@3" }
+  },
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
