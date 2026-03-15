@@ -4,47 +4,58 @@ let cache = { date: null, data: null }
 
 const today = () => new Date().toISOString().split('T')[0]
 
-const PROMPT = (date) => `You are an AI financial research analyst for the Indian IPO market.
-Current Date: ${date}
+const PROMPT = (date) => {
+  const label = new Date(date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
+  return `You are an expert Indian IPO market analyst.
 
-List all IPOs on NSE/BSE (Mainboard, SME, InvIT, REIT) that are open, upcoming, recently listed, or closed near ${date}.
-Return ONLY a valid JSON array — no markdown, no explanation.
+TODAY IS: ${date} (${label})
 
-Rules:
-- Sort by ipo_open_date latest first
-- All money in INR crores
-- AI scores 0–10
-- expected_listing_price = price_band_max + current_gmp (null if no GMP)
+TASK: Return Indian IPOs in this priority order:
+1. OPEN IPOs — currently accepting subscriptions (ipo_open_date <= ${date} AND ipo_close_date >= ${date}) — include ALL of them
+2. UPCOMING IPOs — opening within next 15 days from ${date}
+3. RECENTLY LISTED — listed within last 30 days from ${date}
+4. RECENTLY CLOSED — closed within last 7 days, listing pending
 
-Each item:
+STATUS RULES (apply strictly based on ${date}):
+- "Open"     → ipo_open_date <= ${date} AND ipo_close_date >= ${date}
+- "Upcoming" → ipo_open_date > ${date}
+- "Listed"   → listing_date != null AND listing_date <= ${date}
+- "Closed"   → ipo_close_date < ${date} AND (listing_date is null OR listing_date > ${date})
+
+Only include 2025-2026 IPOs. All dates YYYY-MM-DD. Money in INR crores. Scores 0-10.
+Return ONLY a raw JSON array. No markdown. No code fences. No text outside the array.
+
+Each object:
 {
-  "ipo_name": "",
-  "company_name": "",
-  "exchange": "NSE | BSE | BOTH",
-  "ipo_type": "Mainboard | SME | InvIT | REIT",
-  "sector": "",
-  "status": "Open | Upcoming | Listed | Closed",
-  "ipo_open_date": "",
-  "ipo_close_date": "",
-  "listing_date": "",
-  "price_band_min": null,
-  "price_band_max": null,
-  "lot_size": null,
-  "issue_size_cr": null,
-  "gmp": null,
-  "expected_listing_price": null,
-  "expected_gain_percent": null,
-  "overall_score": null,
-  "listing_gain_score": null,
-  "long_term_score": null,
-  "strengths": [],
-  "risks": []
+  "ipo_name": "Company IPO",
+  "company_name": "Full Name Ltd",
+  "exchange": "NSE or BSE or BOTH",
+  "ipo_type": "Mainboard or SME or InvIT or REIT",
+  "sector": "sector name",
+  "status": "Open or Upcoming or Listed or Closed",
+  "ipo_open_date": "YYYY-MM-DD",
+  "ipo_close_date": "YYYY-MM-DD",
+  "listing_date": "YYYY-MM-DD or null",
+  "price_band_min": 100,
+  "price_band_max": 110,
+  "lot_size": 135,
+  "issue_size_cr": 500,
+  "gmp": 25,
+  "expected_listing_price": 135,
+  "expected_gain_percent": 22.7,
+  "overall_score": 7.5,
+  "listing_gain_score": 7.0,
+  "long_term_score": 6.5,
+  "strengths": ["Point 1", "Point 2", "Point 3"],
+  "risks": ["Risk 1", "Risk 2"]
 }`
+}
 
 export async function GET(req) {
   const force = new URL(req.url).searchParams.get('refresh') === 'true'
   const date = today()
 
+  // Serve cache if same day and not forced
   if (!force && cache.date === date && cache.data) {
     return NextResponse.json({ data: cache.data, cached: true, date })
   }
@@ -61,9 +72,12 @@ export async function GET(req) {
       body: JSON.stringify({
         model: 'llama-3.3-70b-versatile',
         max_tokens: 8000,
-        temperature: 0.2,
+        temperature: 0.1,
         messages: [
-          { role: 'system', content: 'Return ONLY valid JSON arrays. No markdown. No explanation.' },
+          {
+            role: 'system',
+            content: `You are an Indian IPO data API. Today is ${date}. Return ONLY a valid JSON array. No markdown, no code fences, no text outside the array.`
+          },
           { role: 'user', content: PROMPT(date) },
         ],
       }),
@@ -79,10 +93,32 @@ export async function GET(req) {
     const match = text.match(/\[[\s\S]*\]/)
     if (match) text = match[0]
 
-    const data = JSON.parse(text)
-    cache = { date, data }
+    const raw = JSON.parse(text)
 
-    return NextResponse.json({ data, cached: false, date })
+    // Server-side status correction based on real date
+    const now = new Date(date)
+    const processed = raw.map(ipo => {
+      const open    = ipo.ipo_open_date  ? new Date(ipo.ipo_open_date)  : null
+      const close   = ipo.ipo_close_date ? new Date(ipo.ipo_close_date) : null
+      const listing = ipo.listing_date   ? new Date(ipo.listing_date)   : null
+      let status = ipo.status
+      if      (listing && listing <= now)                     status = 'Listed'
+      else if (open && close && open <= now && now <= close)  status = 'Open'
+      else if (open && open > now)                            status = 'Upcoming'
+      else if (close && close < now)                          status = 'Closed'
+      return { ...ipo, status }
+    })
+
+    // Sort: Open first, then Upcoming, then Listed, then Closed
+    const ORDER = { Open: 0, Upcoming: 1, Listed: 2, Closed: 3 }
+    processed.sort((a, b) => {
+      const statusDiff = (ORDER[a.status] ?? 4) - (ORDER[b.status] ?? 4)
+      if (statusDiff !== 0) return statusDiff
+      return (b.ipo_open_date || '').localeCompare(a.ipo_open_date || '')
+    })
+
+    cache = { date, data: processed }
+    return NextResponse.json({ data: processed, cached: false, date })
   } catch (e) {
     return NextResponse.json({ error: e.message }, { status: 500 })
   }
