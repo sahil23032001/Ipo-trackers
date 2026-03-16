@@ -1,5 +1,5 @@
 {
-  "ts": 1773638552381,
+  "ts": 1773685826337,
   "date": "2026-03-16",
   "ipos": [
     {
@@ -14,7 +14,7 @@
       "listing_date": null,
       "price_band_min": null,
       "price_band_max": null,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 440,
       "gmp": 0,
       "expected_listing_price": null,
@@ -33,7 +33,7 @@
     },
     {
       "ipo_name": "Central Mine Planning IPO",
-      "company_name": "Central Mine Planning",
+      "company_name": "Central Mine Planning & Design Institute",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Mining",
@@ -41,23 +41,23 @@
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
-      "price_band_min": null,
-      "price_band_max": null,
-      "lot_size": 1000,
-      "issue_size_cr": null,
+      "price_band_min": 163,
+      "price_band_max": 172,
+      "lot_size": 100,
+      "issue_size_cr": 1842,
       "gmp": 19,
-      "expected_listing_price": null,
-      "expected_gain_percent": null,
-      "overall_score": 5,
-      "listing_gain_score": 5,
-      "long_term_score": 5,
+      "expected_listing_price": 191,
+      "expected_gain_percent": 11,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Experienced Management",
-        "Strong Sector"
+        "Government-backed",
+        "Experienced management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Volatility"
+        "Dependence on government contracts",
+        "Competition from private players"
       ]
     },
     {
@@ -72,21 +72,21 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 400,
       "gmp": 0,
-      "expected_listing_price": 320,
-      "expected_gain_percent": 0,
-      "overall_score": 6,
-      "listing_gain_score": 6,
-      "long_term_score": 6,
+      "expected_listing_price": null,
+      "expected_gain_percent": null,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Unknown",
+        "Unknown"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Unknown",
+        "Unknown"
       ]
     },
     {
@@ -101,21 +101,21 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 10000,
+      "lot_size": 100,
       "issue_size_cr": 6000,
       "gmp": 4,
       "expected_listing_price": 104,
       "expected_gain_percent": 4,
-      "overall_score": 7,
-      "listing_gain_score": 7,
-      "long_term_score": 7,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Infrastructure Portfolio",
-        "Experienced Management"
+        "Diversified portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Volatility"
+        "Dependence on infrastructure sector",
+        "Competition from other InvITs"
       ]
     },
     {
@@ -130,21 +130,21 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 306,
       "gmp": 19,
       "expected_listing_price": 538,
       "expected_gain_percent": 3.7,
-      "overall_score": 7,
-      "listing_gain_score": 7,
-      "long_term_score": 7,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Innovative products",
+        "Experienced management"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on technology sector",
+        "Competition from established players"
       ]
     },
     {
@@ -159,21 +159,21 @@
       "listing_date": null,
       "price_band_min": 116,
       "price_band_max": 122,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 255,
       "gmp": 2,
       "expected_listing_price": 124,
       "expected_gain_percent": 1.6,
-      "overall_score": 6,
-      "listing_gain_score": 6,
-      "long_term_score": 6,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Experienced management",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on metals sector",
+        "Competition from established players"
       ]
     },
     {
@@ -188,7 +188,7 @@
       "listing_date": null,
       "price_band_min": 1287,
       "price_band_max": 1352,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 1087.45,
       "gmp": 1352,
       "expected_listing_price": 2704,
@@ -197,12 +197,12 @@
       "listing_gain_score": 8,
       "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Innovative products",
+        "Experienced management"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on automobile sector",
+        "Competition from established players"
       ]
     },
     {
@@ -217,7 +217,7 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
@@ -226,12 +226,12 @@
       "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Experienced management",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on engineering sector",
+        "Competition from established players"
       ]
     },
     {
@@ -239,28 +239,28 @@
       "company_name": "PNGS Reva Diamond",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Luxury Goods",
+      "sector": "Gem and Jewellery",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
       "price_band_min": 367,
       "price_band_max": 386,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 380,
       "gmp": 386,
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 7,
-      "long_term_score": 7,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Experienced management",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on gem and jewellery sector",
+        "Competition from established players"
       ]
     },
     {
@@ -275,7 +275,7 @@
       "listing_date": null,
       "price_band_min": 1000,
       "price_band_max": 1053,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 3100,
       "gmp": 1053,
       "expected_listing_price": 2106,
@@ -284,12 +284,12 @@
       "listing_gain_score": 8,
       "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Innovative products",
+        "Experienced management"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on renewable energy sector",
+        "Competition from established players"
       ]
     },
     {
@@ -297,28 +297,28 @@
       "company_name": "Shree Ram Twistex",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Textiles",
+      "sector": "Textile",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
       "price_band_min": 95,
       "price_band_max": 104,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 110.2,
       "gmp": 104,
       "expected_listing_price": 208,
       "expected_gain_percent": 100,
-      "overall_score": 6,
-      "listing_gain_score": 6,
-      "long_term_score": 6,
+      "overall_score": 5,
+      "listing_gain_score": 5,
+      "long_term_score": 5,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Experienced management",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on textile sector",
+        "Competition from established players"
       ]
     },
     {
@@ -333,21 +333,21 @@
       "listing_date": null,
       "price_band_min": 75,
       "price_band_max": 79,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 165,
       "gmp": 79,
       "expected_listing_price": 158,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 7,
-      "long_term_score": 7,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Experienced management",
+        "Diversified service portfolio"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Dependence on healthcare sector",
+        "Competition from established players"
       ]
     }
   ]
