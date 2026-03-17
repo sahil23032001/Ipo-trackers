@@ -1,39 +1,68 @@
 {
-  "ts": 1773729396213,
+  "ts": 1773744832271,
   "date": "2026-03-17",
   "ipos": [
     {
-      "ipo_name": "Amir Chand IPO",
-      "company_name": "Amir Chand",
+      "ipo_name": "Sai Parenteral’s IPO",
+      "company_name": "Sai Parenteral Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Unknown",
+      "sector": "Pharmaceuticals",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
       "price_band_min": null,
       "price_band_max": null,
-      "lot_size": 1000,
-      "issue_size_cr": 440,
-      "gmp": 4,
+      "lot_size": 100,
+      "issue_size_cr": null,
+      "gmp": 0,
       "expected_listing_price": null,
       "expected_gain_percent": null,
       "overall_score": 5,
       "listing_gain_score": 5,
       "long_term_score": 5,
       "strengths": [
-        "Unknown",
-        "Unknown"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Unknown",
-        "Unknown"
+        "Intense competition",
+        "Regulatory risks"
+      ]
+    },
+    {
+      "ipo_name": "Amir Chand IPO",
+      "company_name": "Amir Chand Ltd",
+      "exchange": "BSE",
+      "ipo_type": "Mainboard",
+      "sector": "Textiles",
+      "status": "Upcoming",
+      "ipo_open_date": null,
+      "ipo_close_date": null,
+      "listing_date": null,
+      "price_band_min": null,
+      "price_band_max": null,
+      "lot_size": 100,
+      "issue_size_cr": 440,
+      "gmp": 4,
+      "expected_listing_price": null,
+      "expected_gain_percent": null,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
+      "strengths": [
+        "Diversified product range",
+        "Strong distribution network"
+      ],
+      "risks": [
+        "Dependence on few customers",
+        "Raw material price volatility"
       ]
     },
     {
       "ipo_name": "Central Mine Planning IPO",
-      "company_name": "Central Mine Planning & Design Institute",
+      "company_name": "Central Mine Planning & Design Institute Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Mining",
@@ -48,21 +77,21 @@
       "gmp": 22,
       "expected_listing_price": 194,
       "expected_gain_percent": 12.8,
-      "overall_score": 6,
+      "overall_score": 7,
       "listing_gain_score": 7,
-      "long_term_score": 6,
+      "long_term_score": 7,
       "strengths": [
-        "Government-backed",
-        "Experienced management"
+        "Strong technical expertise",
+        "Long-term contracts"
       ],
       "risks": [
         "Dependence on government contracts",
-        "Competition from private players"
+        "Environmental risks"
       ]
     },
     {
       "ipo_name": "GSP Crop Science IPO",
-      "company_name": "GSP Crop Science",
+      "company_name": "GSP Crop Science Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Agriculture",
@@ -72,26 +101,26 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 50,
+      "lot_size": 100,
       "issue_size_cr": 400,
       "gmp": 0,
       "expected_listing_price": 320,
       "expected_gain_percent": 0,
-      "overall_score": 5,
-      "listing_gain_score": 5,
-      "long_term_score": 5,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Dependence on agricultural sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "Raajmarg Infra InvIT IPO",
-      "company_name": "Raajmarg Infra",
+      "company_name": "Raajmarg Infra InvIT",
       "exchange": "BSE",
       "ipo_type": "InvIT",
       "sector": "Infrastructure",
@@ -101,26 +130,26 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 10000,
+      "lot_size": 100,
       "issue_size_cr": 6000,
       "gmp": 3,
       "expected_listing_price": 103,
       "expected_gain_percent": 3,
-      "overall_score": 6,
-      "listing_gain_score": 6,
-      "long_term_score": 6,
+      "overall_score": 7,
+      "listing_gain_score": 7,
+      "long_term_score": 7,
       "strengths": [
-        "Diversified portfolio",
-        "Experienced management"
+        "Strong infrastructure portfolio",
+        "Stable cash flows"
       ],
       "risks": [
-        "Dependence on infrastructure sector",
-        "Competition from other InvITs"
+        "Interest rate risks",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "Innovision IPO",
-      "company_name": "Innovision",
+      "company_name": "Innovision Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Technology",
@@ -130,7 +159,7 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 25,
+      "lot_size": 100,
       "issue_size_cr": 306,
       "gmp": 26,
       "expected_listing_price": 545,
@@ -139,17 +168,17 @@
       "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong technical expertise",
+        "Innovative products"
       ],
       "risks": [
-        "Dependence on technology sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "Rajputana Stainless IPO",
-      "company_name": "Rajputana Stainless",
+      "company_name": "Rajputana Stainless Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Metals",
@@ -164,21 +193,21 @@
       "gmp": 2,
       "expected_listing_price": 124,
       "expected_gain_percent": 1.6,
-      "overall_score": 5,
-      "listing_gain_score": 5,
-      "long_term_score": 5,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Dependence on metals sector",
-        "Competition from established players"
+        "Intense competition",
+        "Raw material price volatility"
       ]
     },
     {
       "ipo_name": "SEDEMAC Mechatronics IPO",
-      "company_name": "SEDEMAC Mechatronics",
+      "company_name": "SEDEMAC Mechatronics Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Automobile",
@@ -188,26 +217,26 @@
       "listing_date": null,
       "price_band_min": 1287,
       "price_band_max": 1352,
-      "lot_size": 10,
+      "lot_size": 100,
       "issue_size_cr": 1087.45,
       "gmp": 1352,
       "expected_listing_price": 2704,
       "expected_gain_percent": 100,
       "overall_score": 8,
-      "listing_gain_score": 9,
+      "listing_gain_score": 8,
       "long_term_score": 8,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong technical expertise",
+        "Innovative products"
       ],
       "risks": [
-        "Dependence on automobile sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "Omnitech Engineering IPO",
-      "company_name": "Omnitech Engineering",
+      "company_name": "Omnitech Engineering Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Engineering",
@@ -217,26 +246,26 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 50,
+      "lot_size": 100,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 8,
+      "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong technical expertise",
+        "Experienced management"
       ],
       "risks": [
-        "Dependence on engineering sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "PNGS Reva Diamond IPO",
-      "company_name": "PNGS Reva Diamond",
+      "company_name": "PNGS Reva Diamond Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Luxury Goods",
@@ -246,26 +275,26 @@
       "listing_date": null,
       "price_band_min": 367,
       "price_band_max": 386,
-      "lot_size": 25,
+      "lot_size": 100,
       "issue_size_cr": 380,
       "gmp": 386,
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
-      "overall_score": 6,
+      "overall_score": 7,
       "listing_gain_score": 7,
-      "long_term_score": 6,
+      "long_term_score": 7,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong brand portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Dependence on luxury goods sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "Clean Max Enviro IPO",
-      "company_name": "Clean Max Enviro",
+      "company_name": "Clean Max Enviro Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Renewable Energy",
@@ -275,26 +304,26 @@
       "listing_date": null,
       "price_band_min": 1000,
       "price_band_max": 1053,
-      "lot_size": 10,
+      "lot_size": 100,
       "issue_size_cr": 3100,
       "gmp": 1053,
       "expected_listing_price": 2106,
       "expected_gain_percent": 100,
       "overall_score": 8,
-      "listing_gain_score": 9,
+      "listing_gain_score": 8,
       "long_term_score": 8,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong technical expertise",
+        "Innovative products"
       ],
       "risks": [
-        "Dependence on renewable energy sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
       "ipo_name": "Shree Ram Twistex IPO",
-      "company_name": "Shree Ram Twistex",
+      "company_name": "Shree Ram Twistex Ltd",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Textiles",
@@ -309,45 +338,16 @@
       "gmp": 104,
       "expected_listing_price": 208,
       "expected_gain_percent": 100,
-      "overall_score": 5,
-      "listing_gain_score": 6,
-      "long_term_score": 5,
-      "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
-      ],
-      "risks": [
-        "Dependence on textiles sector",
-        "Competition from established players"
-      ]
-    },
-    {
-      "ipo_name": "Gaudium IVF IPO",
-      "company_name": "Gaudium IVF",
-      "exchange": "BSE",
-      "ipo_type": "Mainboard",
-      "sector": "Healthcare",
-      "status": "Upcoming",
-      "ipo_open_date": null,
-      "ipo_close_date": null,
-      "listing_date": null,
-      "price_band_min": 75,
-      "price_band_max": 79,
-      "lot_size": 100,
-      "issue_size_cr": 165,
-      "gmp": 79,
-      "expected_listing_price": 158,
-      "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 7,
+      "listing_gain_score": 6,
       "long_term_score": 6,
       "strengths": [
-        "Experienced management",
-        "Strong product portfolio"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Dependence on healthcare sector",
-        "Competition from established players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     }
   ]
