@@ -1,6 +1,6 @@
 {
-  "ts": 1773685826337,
-  "date": "2026-03-16",
+  "ts": 1773729396213,
+  "date": "2026-03-17",
   "ipos": [
     {
       "ipo_name": "Amir Chand IPO",
@@ -14,9 +14,9 @@
       "listing_date": null,
       "price_band_min": null,
       "price_band_max": null,
-      "lot_size": 100,
+      "lot_size": 1000,
       "issue_size_cr": 440,
-      "gmp": 0,
+      "gmp": 4,
       "expected_listing_price": null,
       "expected_gain_percent": null,
       "overall_score": 5,
@@ -45,11 +45,11 @@
       "price_band_max": 172,
       "lot_size": 100,
       "issue_size_cr": 1842,
-      "gmp": 19,
-      "expected_listing_price": 191,
-      "expected_gain_percent": 11,
+      "gmp": 22,
+      "expected_listing_price": 194,
+      "expected_gain_percent": 12.8,
       "overall_score": 6,
-      "listing_gain_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
         "Government-backed",
@@ -72,21 +72,21 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 100,
+      "lot_size": 50,
       "issue_size_cr": 400,
       "gmp": 0,
-      "expected_listing_price": null,
-      "expected_gain_percent": null,
+      "expected_listing_price": 320,
+      "expected_gain_percent": 0,
       "overall_score": 5,
       "listing_gain_score": 5,
       "long_term_score": 5,
       "strengths": [
-        "Unknown",
-        "Unknown"
+        "Experienced management",
+        "Strong product portfolio"
       ],
       "risks": [
-        "Unknown",
-        "Unknown"
+        "Dependence on agricultural sector",
+        "Competition from established players"
       ]
     },
     {
@@ -101,11 +101,11 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 100,
+      "lot_size": 10000,
       "issue_size_cr": 6000,
-      "gmp": 4,
-      "expected_listing_price": 104,
-      "expected_gain_percent": 4,
+      "gmp": 3,
+      "expected_listing_price": 103,
+      "expected_gain_percent": 3,
       "overall_score": 6,
       "listing_gain_score": 6,
       "long_term_score": 6,
@@ -130,17 +130,17 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 100,
+      "lot_size": 25,
       "issue_size_cr": 306,
-      "gmp": 19,
-      "expected_listing_price": 538,
-      "expected_gain_percent": 3.7,
-      "overall_score": 6,
-      "listing_gain_score": 6,
-      "long_term_score": 6,
+      "gmp": 26,
+      "expected_listing_price": 545,
+      "expected_gain_percent": 5,
+      "overall_score": 7,
+      "listing_gain_score": 7,
+      "long_term_score": 7,
       "strengths": [
-        "Innovative products",
-        "Experienced management"
+        "Experienced management",
+        "Strong product portfolio"
       ],
       "risks": [
         "Dependence on technology sector",
@@ -169,7 +169,7 @@
       "long_term_score": 5,
       "strengths": [
         "Experienced management",
-        "Diversified product portfolio"
+        "Strong product portfolio"
       ],
       "risks": [
         "Dependence on metals sector",
@@ -188,17 +188,17 @@
       "listing_date": null,
       "price_band_min": 1287,
       "price_band_max": 1352,
-      "lot_size": 100,
+      "lot_size": 10,
       "issue_size_cr": 1087.45,
       "gmp": 1352,
       "expected_listing_price": 2704,
       "expected_gain_percent": 100,
       "overall_score": 8,
-      "listing_gain_score": 8,
+      "listing_gain_score": 9,
       "long_term_score": 8,
       "strengths": [
-        "Innovative products",
-        "Experienced management"
+        "Experienced management",
+        "Strong product portfolio"
       ],
       "risks": [
         "Dependence on automobile sector",
@@ -217,17 +217,17 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 100,
+      "lot_size": 50,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 7,
+      "listing_gain_score": 8,
       "long_term_score": 7,
       "strengths": [
         "Experienced management",
-        "Diversified product portfolio"
+        "Strong product portfolio"
       ],
       "risks": [
         "Dependence on engineering sector",
@@ -239,27 +239,27 @@
       "company_name": "PNGS Reva Diamond",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Gem and Jewellery",
+      "sector": "Luxury Goods",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
       "price_band_min": 367,
       "price_band_max": 386,
-      "lot_size": 100,
+      "lot_size": 25,
       "issue_size_cr": 380,
       "gmp": 386,
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
         "Experienced management",
-        "Diversified product portfolio"
+        "Strong product portfolio"
       ],
       "risks": [
-        "Dependence on gem and jewellery sector",
+        "Dependence on luxury goods sector",
         "Competition from established players"
       ]
     },
@@ -275,17 +275,17 @@
       "listing_date": null,
       "price_band_min": 1000,
       "price_band_max": 1053,
-      "lot_size": 100,
+      "lot_size": 10,
       "issue_size_cr": 3100,
       "gmp": 1053,
       "expected_listing_price": 2106,
       "expected_gain_percent": 100,
       "overall_score": 8,
-      "listing_gain_score": 8,
+      "listing_gain_score": 9,
       "long_term_score": 8,
       "strengths": [
-        "Innovative products",
-        "Experienced management"
+        "Experienced management",
+        "Strong product portfolio"
       ],
       "risks": [
         "Dependence on renewable energy sector",
@@ -297,7 +297,7 @@
       "company_name": "Shree Ram Twistex",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Textile",
+      "sector": "Textiles",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
@@ -310,14 +310,14 @@
       "expected_listing_price": 208,
       "expected_gain_percent": 100,
       "overall_score": 5,
-      "listing_gain_score": 5,
+      "listing_gain_score": 6,
       "long_term_score": 5,
       "strengths": [
         "Experienced management",
-        "Diversified product portfolio"
+        "Strong product portfolio"
       ],
       "risks": [
-        "Dependence on textile sector",
+        "Dependence on textiles sector",
         "Competition from established players"
       ]
     },
@@ -339,11 +339,11 @@
       "expected_listing_price": 158,
       "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
         "Experienced management",
-        "Diversified service portfolio"
+        "Strong product portfolio"
       ],
       "risks": [
         "Dependence on healthcare sector",
