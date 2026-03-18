@@ -1,6 +1,6 @@
 {
-  "ts": 1773744832271,
-  "date": "2026-03-17",
+  "ts": 1773805947861,
+  "date": "2026-03-18",
   "ipos": [
     {
       "ipo_name": "Sai Parenteral’s IPO",
@@ -45,7 +45,7 @@
       "price_band_max": null,
       "lot_size": 100,
       "issue_size_cr": 440,
-      "gmp": 4,
+      "gmp": 5,
       "expected_listing_price": null,
       "expected_gain_percent": null,
       "overall_score": 6,
@@ -74,15 +74,15 @@
       "price_band_max": 172,
       "lot_size": 100,
       "issue_size_cr": 1842,
-      "gmp": 22,
-      "expected_listing_price": 194,
-      "expected_gain_percent": 12.8,
+      "gmp": 15,
+      "expected_listing_price": 187,
+      "expected_gain_percent": 8.7,
       "overall_score": 7,
       "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Strong technical expertise",
-        "Long-term contracts"
+        "Strong technical capabilities",
+        "Government support"
       ],
       "risks": [
         "Dependence on government contracts",
@@ -161,15 +161,15 @@
       "price_band_max": 519,
       "lot_size": 100,
       "issue_size_cr": 306,
-      "gmp": 26,
-      "expected_listing_price": 545,
-      "expected_gain_percent": 5,
-      "overall_score": 7,
-      "listing_gain_score": 7,
-      "long_term_score": 7,
+      "gmp": 0,
+      "expected_listing_price": 519,
+      "expected_gain_percent": 0,
+      "overall_score": 6,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
-        "Strong technical expertise",
-        "Innovative products"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
         "Intense competition",
@@ -190,9 +190,9 @@
       "price_band_max": 122,
       "lot_size": 100,
       "issue_size_cr": 255,
-      "gmp": 2,
-      "expected_listing_price": 124,
-      "expected_gain_percent": 1.6,
+      "gmp": 3,
+      "expected_listing_price": 125,
+      "expected_gain_percent": 2.5,
       "overall_score": 6,
       "listing_gain_score": 6,
       "long_term_score": 6,
@@ -202,7 +202,7 @@
       ],
       "risks": [
         "Intense competition",
-        "Raw material price volatility"
+        "Regulatory risks"
       ]
     },
     {
@@ -226,8 +226,8 @@
       "listing_gain_score": 8,
       "long_term_score": 8,
       "strengths": [
-        "Strong technical expertise",
-        "Innovative products"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
         "Intense competition",
@@ -255,7 +255,7 @@
       "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Strong technical expertise",
+        "Strong product portfolio",
         "Experienced management"
       ],
       "risks": [
@@ -284,7 +284,7 @@
       "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Strong brand portfolio",
+        "Strong product portfolio",
         "Experienced management"
       ],
       "risks": [
@@ -313,8 +313,8 @@
       "listing_gain_score": 8,
       "long_term_score": 8,
       "strengths": [
-        "Strong technical expertise",
-        "Innovative products"
+        "Strong product portfolio",
+        "Experienced management"
       ],
       "risks": [
         "Intense competition",
