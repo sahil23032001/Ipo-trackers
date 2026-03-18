@@ -1,5 +1,5 @@
 {
-  "ts": 1773805947861,
+  "ts": 1773806113958,
   "date": "2026-03-18",
   "ipos": [
     {
@@ -81,7 +81,7 @@
       "listing_gain_score": 7,
       "long_term_score": 7,
       "strengths": [
-        "Strong technical capabilities",
+        "Strong technical expertise",
         "Government support"
       ],
       "risks": [
@@ -143,7 +143,7 @@
         "Stable cash flows"
       ],
       "risks": [
-        "Interest rate risks",
+        "Dependence on few assets",
         "Regulatory risks"
       ]
     },
