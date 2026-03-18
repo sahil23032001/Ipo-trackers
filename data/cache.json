@@ -1,5 +1,5 @@
 {
-  "ts": 1773855139660,
+  "ts": 1773872894637,
   "date": "2026-03-18",
   "ipos": [
     {
@@ -14,7 +14,7 @@
       "listing_date": null,
       "price_band_min": 375,
       "price_band_max": 395,
-      "lot_size": 34,
+      "lot_size": 37,
       "issue_size_cr": 1100,
       "gmp": 0,
       "expected_listing_price": 395,
@@ -24,7 +24,7 @@
       "long_term_score": 7,
       "strengths": [
         "Experienced Management",
-        "Strong Product Portfolio"
+        "Growing Demand"
       ],
       "risks": [
         "Intense Competition",
@@ -43,7 +43,7 @@
       "listing_date": null,
       "price_band_min": 372,
       "price_band_max": 392,
-      "lot_size": 32,
+      "lot_size": 37,
       "issue_size_cr": 409,
       "gmp": 0,
       "expected_listing_price": 392,
@@ -52,8 +52,8 @@
       "listing_gain_score": 6,
       "long_term_score": 8,
       "strengths": [
-        "Strong R&D Capabilities",
-        "Diversified Product Portfolio"
+        "Strong Product Portfolio",
+        "Experienced Management"
       ],
       "risks": [
         "Regulatory Risks",
@@ -72,7 +72,7 @@
       "listing_date": null,
       "price_band_min": null,
       "price_band_max": null,
-      "lot_size": 30,
+      "lot_size": null,
       "issue_size_cr": 440,
       "gmp": 5,
       "expected_listing_price": null,
@@ -82,16 +82,16 @@
       "long_term_score": 6,
       "strengths": [
         "Experienced Management",
-        "Strong Distribution Network"
+        "Growing Demand"
       ],
       "risks": [
         "Intense Competition",
-        "Dependence on Few Clients"
+        "Regulatory Risks"
       ]
     },
     {
       "ipo_name": "Central Mine Planning IPO",
-      "company_name": "Central Mine Planning & Design Institute Limited",
+      "company_name": "Central Mine Planning and Design Institute Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Mining",
@@ -101,21 +101,21 @@
       "listing_date": null,
       "price_band_min": 163,
       "price_band_max": 172,
-      "lot_size": 40,
+      "lot_size": 81,
       "issue_size_cr": 1842,
       "gmp": 15,
       "expected_listing_price": 187,
       "expected_gain_percent": 8.7,
       "overall_score": 8,
-      "listing_gain_score": 9,
-      "long_term_score": 8,
+      "listing_gain_score": 7,
+      "long_term_score": 9,
       "strengths": [
-        "Strong Technical Capabilities",
-        "Government Support"
+        "Strong Technical Expertise",
+        "Growing Demand"
       ],
       "risks": [
         "Regulatory Risks",
-        "Competition from Private Players"
+        "Competition from Established Players"
       ]
     },
     {
@@ -130,7 +130,7 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 35,
+      "lot_size": 47,
       "issue_size_cr": 400,
       "gmp": 0,
       "expected_listing_price": 320,
@@ -139,11 +139,11 @@
       "listing_gain_score": 5,
       "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Experienced Management",
+        "Growing Demand"
       ],
       "risks": [
-        "Dependence on Few Products",
+        "Intense Competition",
         "Regulatory Risks"
       ]
     },
@@ -159,7 +159,7 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 1000,
+      "lot_size": 10000,
       "issue_size_cr": 6000,
       "gmp": 3,
       "expected_listing_price": 103,
@@ -168,12 +168,12 @@
       "listing_gain_score": 6,
       "long_term_score": 8,
       "strengths": [
-        "Strong Sponsor Support",
-        "Diversified Asset Portfolio"
+        "Strong Sponsor",
+        "Growing Demand"
       ],
       "risks": [
         "Regulatory Risks",
-        "Dependence on Few Sponsors"
+        "Competition from Established Players"
       ]
     },
     {
@@ -198,11 +198,11 @@
       "long_term_score": 7,
       "strengths": [
         "Experienced Management",
-        "Strong Product Portfolio"
+        "Growing Demand"
       ],
       "risks": [
         "Intense Competition",
-        "Dependence on Few Clients"
+        "Regulatory Risks"
       ]
     },
     {
@@ -217,21 +217,21 @@
       "listing_date": null,
       "price_band_min": 116,
       "price_band_max": 122,
-      "lot_size": 40,
+      "lot_size": 81,
       "issue_size_cr": 255,
       "gmp": 3,
       "expected_listing_price": 125,
       "expected_gain_percent": 2.5,
-      "overall_score": 5,
-      "listing_gain_score": 4,
-      "long_term_score": 6,
+      "overall_score": 7,
+      "listing_gain_score": 6,
+      "long_term_score": 8,
       "strengths": [
-        "Experienced Management",
-        "Strong Distribution Network"
+        "Strong Product Portfolio",
+        "Experienced Management"
       ],
       "risks": [
-        "Dependence on Few Clients",
-        "Regulatory Risks"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
@@ -246,21 +246,21 @@
       "listing_date": null,
       "price_band_min": 1287,
       "price_band_max": 1352,
-      "lot_size": 10,
+      "lot_size": 9,
       "issue_size_cr": 1087.45,
       "gmp": 1352,
       "expected_listing_price": 2704,
       "expected_gain_percent": 100,
       "overall_score": 8,
-      "listing_gain_score": 9,
-      "long_term_score": 8,
+      "listing_gain_score": 7,
+      "long_term_score": 9,
       "strengths": [
-        "Strong Technical Capabilities",
-        "Government Support"
+        "Strong Technical Expertise",
+        "Growing Demand"
       ],
       "risks": [
         "Regulatory Risks",
-        "Competition from Private Players"
+        "Competition from Established Players"
       ]
     },
     {
@@ -275,21 +275,21 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 35,
+      "lot_size": 55,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 8,
-      "long_term_score": 7,
+      "listing_gain_score": 6,
+      "long_term_score": 8,
       "strengths": [
         "Experienced Management",
-        "Strong Product Portfolio"
+        "Growing Demand"
       ],
       "risks": [
         "Intense Competition",
-        "Dependence on Few Clients"
+        "Regulatory Risks"
       ]
     },
     {
@@ -304,20 +304,20 @@
       "listing_date": null,
       "price_band_min": 367,
       "price_band_max": 386,
-      "lot_size": 30,
+      "lot_size": 33,
       "issue_size_cr": 380,
       "gmp": 386,
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 7,
-      "long_term_score": 6,
+      "listing_gain_score": 5,
+      "long_term_score": 7,
       "strengths": [
         "Experienced Management",
-        "Strong Distribution Network"
+        "Growing Demand"
       ],
       "risks": [
-        "Dependence on Few Clients",
+        "Intense Competition",
         "Regulatory Risks"
       ]
     },
@@ -333,21 +333,21 @@
       "listing_date": null,
       "price_band_min": 1000,
       "price_band_max": 1053,
-      "lot_size": 15,
+      "lot_size": 12,
       "issue_size_cr": 3100,
       "gmp": 1053,
       "expected_listing_price": 2106,
       "expected_gain_percent": 100,
       "overall_score": 8,
-      "listing_gain_score": 9,
-      "long_term_score": 8,
+      "listing_gain_score": 7,
+      "long_term_score": 9,
       "strengths": [
-        "Strong Technical Capabilities",
-        "Government Support"
+        "Strong Technical Expertise",
+        "Growing Demand"
       ],
       "risks": [
         "Regulatory Risks",
-        "Competition from Private Players"
+        "Competition from Established Players"
       ]
     }
   ]
