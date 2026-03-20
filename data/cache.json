@@ -1,6 +1,6 @@
 {
-  "ts": 1773930341013,
-  "date": "2026-03-19",
+  "ts": 1773988620597,
+  "date": "2026-03-20",
   "ipos": [
     {
       "ipo_name": "Powerica IPO",
@@ -14,7 +14,7 @@
       "listing_date": null,
       "price_band_min": 375,
       "price_band_max": 395,
-      "lot_size": 34,
+      "lot_size": 37,
       "issue_size_cr": 1100,
       "gmp": 8,
       "expected_listing_price": 403,
@@ -72,7 +72,7 @@
       "listing_date": null,
       "price_band_min": 201,
       "price_band_max": 212,
-      "lot_size": 47,
+      "lot_size": 23,
       "issue_size_cr": 440,
       "gmp": 6,
       "expected_listing_price": 218,
@@ -81,17 +81,17 @@
       "listing_gain_score": 5,
       "long_term_score": 7,
       "strengths": [
-        "Established Brand",
-        "Diversified Product Range"
+        "Strong Distribution Network",
+        "Experienced Management"
       ],
       "risks": [
-        "Market Fluctuations",
-        "Competition"
+        "Intense Competition",
+        "Economic Downturn"
       ]
     },
     {
       "ipo_name": "Central Mine Planning IPO",
-      "company_name": "Central Mine Planning & Design Institute Limited",
+      "company_name": "Central Mine Planning and Design Institute Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Mining",
@@ -101,7 +101,7 @@
       "listing_date": null,
       "price_band_min": 163,
       "price_band_max": 172,
-      "lot_size": 58,
+      "lot_size": 29,
       "issue_size_cr": 1842,
       "gmp": 4,
       "expected_listing_price": 176,
@@ -115,7 +115,7 @@
       ],
       "risks": [
         "Regulatory Risks",
-        "Market Competition"
+        "Environmental Concerns"
       ]
     },
     {
@@ -139,8 +139,8 @@
       "listing_gain_score": 4,
       "long_term_score": 7,
       "strengths": [
-        "Strong Research and Development",
-        "Growing Demand"
+        "Strong Product Portfolio",
+        "Experienced Team"
       ],
       "risks": [
         "Regulatory Risks",
@@ -159,7 +159,7 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 1000,
+      "lot_size": 100,
       "issue_size_cr": 6000,
       "gmp": 3,
       "expected_listing_price": 103,
@@ -188,7 +188,7 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 19,
+      "lot_size": 25,
       "issue_size_cr": 306,
       "gmp": 0,
       "expected_listing_price": 519,
@@ -198,7 +198,7 @@
       "long_term_score": 7,
       "strengths": [
         "Strong Technical Expertise",
-        "Growing Demand"
+        "Innovative Products"
       ],
       "risks": [
         "Regulatory Risks",
@@ -217,7 +217,7 @@
       "listing_date": null,
       "price_band_min": 116,
       "price_band_max": 122,
-      "lot_size": 82,
+      "lot_size": 41,
       "issue_size_cr": 255,
       "gmp": 122,
       "expected_listing_price": 244,
@@ -256,7 +256,7 @@
       "long_term_score": 8,
       "strengths": [
         "Strong Technical Expertise",
-        "Growing Demand"
+        "Innovative Products"
       ],
       "risks": [
         "Regulatory Risks",
@@ -275,7 +275,7 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 44,
+      "lot_size": 22,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
@@ -313,8 +313,8 @@
       "listing_gain_score": 8,
       "long_term_score": 7,
       "strengths": [
-        "Strong Brand",
-        "Growing Demand"
+        "Strong Product Portfolio",
+        "Experienced Team"
       ],
       "risks": [
         "Regulatory Risks",
@@ -333,7 +333,7 @@
       "listing_date": null,
       "price_band_min": 1000,
       "price_band_max": 1053,
-      "lot_size": 9,
+      "lot_size": 10,
       "issue_size_cr": 3100,
       "gmp": 1053,
       "expected_listing_price": 2106,
@@ -343,7 +343,7 @@
       "long_term_score": 8,
       "strengths": [
         "Strong Technical Expertise",
-        "Growing Demand"
+        "Innovative Products"
       ],
       "risks": [
         "Regulatory Risks",
