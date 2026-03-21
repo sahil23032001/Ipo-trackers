@@ -1,5 +1,5 @@
 {
-  "ts": 1774077403531,
+  "ts": 1774087020954,
   "date": "2026-03-21",
   "ipos": [
     {
@@ -57,7 +57,7 @@
       ],
       "risks": [
         "Regulatory Risks",
-        "Market Competition"
+        "Competition from Established Players"
       ]
     },
     {
@@ -82,11 +82,11 @@
       "long_term_score": 7,
       "strengths": [
         "Established Brand",
-        "Diversified Product Range"
+        "Diversified Product Portfolio"
       ],
       "risks": [
-        "Market Fluctuations",
-        "Competition from Imports"
+        "Competition from Cheaper Imports",
+        "Fluctuating Raw Material Prices"
       ]
     },
     {
@@ -101,7 +101,7 @@
       "listing_date": null,
       "price_band_min": 163,
       "price_band_max": 172,
-      "lot_size": 53,
+      "lot_size": 55,
       "issue_size_cr": 1842,
       "gmp": 1,
       "expected_listing_price": 173,
@@ -115,7 +115,7 @@
       ],
       "risks": [
         "Regulatory Risks",
-        "Environmental Concerns"
+        "Competition from Private Players"
       ]
     },
     {
@@ -130,7 +130,7 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 35,
+      "lot_size": 30,
       "issue_size_cr": 400,
       "gmp": 0,
       "expected_listing_price": 320,
@@ -139,12 +139,12 @@
       "listing_gain_score": 3,
       "long_term_score": 7,
       "strengths": [
-        "Innovative Products",
+        "Strong Product Portfolio",
         "Experienced Management"
       ],
       "risks": [
-        "Market Competition",
-        "Regulatory Risks"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
@@ -159,7 +159,7 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 10000,
+      "lot_size": 1000,
       "issue_size_cr": 6000,
       "gmp": 3,
       "expected_listing_price": 103,
@@ -168,12 +168,12 @@
       "listing_gain_score": 5,
       "long_term_score": 8,
       "strengths": [
-        "Diversified Asset Portfolio",
-        "Regular Income"
+        "Strong Sponsor",
+        "Diversified Asset Portfolio"
       ],
       "risks": [
-        "Interest Rate Risks",
-        "Credit Risks"
+        "Regulatory Risks",
+        "Interest Rate Risks"
       ]
     },
     {
@@ -188,7 +188,7 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 22,
+      "lot_size": 19,
       "issue_size_cr": 306,
       "gmp": 0,
       "expected_listing_price": 519,
@@ -197,12 +197,12 @@
       "listing_gain_score": 3,
       "long_term_score": 7,
       "strengths": [
-        "Innovative Solutions",
+        "Strong Product Portfolio",
         "Experienced Team"
       ],
       "risks": [
-        "Market Competition",
-        "Technological Risks"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
@@ -217,7 +217,7 @@
       "listing_date": null,
       "price_band_min": 116,
       "price_band_max": 122,
-      "lot_size": 74,
+      "lot_size": 39,
       "issue_size_cr": 255,
       "gmp": 122,
       "expected_listing_price": 244,
@@ -227,11 +227,11 @@
       "long_term_score": 8,
       "strengths": [
         "Established Brand",
-        "Diversified Product Range"
+        "Strong Product Portfolio"
       ],
       "risks": [
-        "Market Fluctuations",
-        "Competition from Imports"
+        "Competition from Cheaper Imports",
+        "Fluctuating Raw Material Prices"
       ]
     },
     {
@@ -255,12 +255,12 @@
       "listing_gain_score": 9,
       "long_term_score": 9,
       "strengths": [
-        "Innovative Products",
-        "Experienced Management"
+        "Strong Technical Capabilities",
+        "Growing Demand"
       ],
       "risks": [
-        "Market Competition",
-        "Technological Risks"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
@@ -275,7 +275,7 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 40,
+      "lot_size": 42,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
@@ -285,11 +285,11 @@
       "long_term_score": 8,
       "strengths": [
         "Established Brand",
-        "Diversified Product Range"
+        "Strong Product Portfolio"
       ],
       "risks": [
-        "Market Fluctuations",
-        "Competition from Imports"
+        "Competition from Cheaper Imports",
+        "Fluctuating Raw Material Prices"
       ]
     },
     {
@@ -304,7 +304,7 @@
       "listing_date": null,
       "price_band_min": 367,
       "price_band_max": 386,
-      "lot_size": 29,
+      "lot_size": 25,
       "issue_size_cr": 380,
       "gmp": 386,
       "expected_listing_price": 772,
@@ -314,11 +314,11 @@
       "long_term_score": 8,
       "strengths": [
         "Established Brand",
-        "Diversified Product Range"
+        "Strong Product Portfolio"
       ],
       "risks": [
-        "Market Fluctuations",
-        "Competition from Imports"
+        "Competition from Cheaper Imports",
+        "Fluctuating Raw Material Prices"
       ]
     },
     {
@@ -342,12 +342,12 @@
       "listing_gain_score": 9,
       "long_term_score": 9,
       "strengths": [
-        "Innovative Solutions",
-        "Experienced Team"
+        "Strong Technical Capabilities",
+        "Growing Demand"
       ],
       "risks": [
-        "Market Competition",
-        "Technological Risks"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     }
   ]
