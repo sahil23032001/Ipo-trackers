@@ -1,6 +1,6 @@
 {
-  "ts": 1773988620597,
-  "date": "2026-03-20",
+  "ts": 1774077403531,
+  "date": "2026-03-21",
   "ipos": [
     {
       "ipo_name": "Powerica IPO",
@@ -14,13 +14,13 @@
       "listing_date": null,
       "price_band_min": 375,
       "price_band_max": 395,
-      "lot_size": 37,
+      "lot_size": 34,
       "issue_size_cr": 1100,
-      "gmp": 8,
-      "expected_listing_price": 403,
-      "expected_gain_percent": 2,
+      "gmp": 7,
+      "expected_listing_price": 402,
+      "expected_gain_percent": 1.8,
       "overall_score": 6,
-      "listing_gain_score": 4,
+      "listing_gain_score": 5,
       "long_term_score": 7,
       "strengths": [
         "Experienced Management",
@@ -43,7 +43,7 @@
       "listing_date": null,
       "price_band_min": 372,
       "price_band_max": 392,
-      "lot_size": 35,
+      "lot_size": 32,
       "issue_size_cr": 409,
       "gmp": 0,
       "expected_listing_price": 392,
@@ -65,14 +65,14 @@
       "company_name": "Amir Chand Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Industrial Equipment",
+      "sector": "Textiles",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
       "price_band_min": 201,
       "price_band_max": 212,
-      "lot_size": 23,
+      "lot_size": 47,
       "issue_size_cr": 440,
       "gmp": 6,
       "expected_listing_price": 218,
@@ -81,12 +81,12 @@
       "listing_gain_score": 5,
       "long_term_score": 7,
       "strengths": [
-        "Strong Distribution Network",
-        "Experienced Management"
+        "Established Brand",
+        "Diversified Product Range"
       ],
       "risks": [
-        "Intense Competition",
-        "Economic Downturn"
+        "Market Fluctuations",
+        "Competition from Imports"
       ]
     },
     {
@@ -101,16 +101,16 @@
       "listing_date": null,
       "price_band_min": 163,
       "price_band_max": 172,
-      "lot_size": 29,
+      "lot_size": 53,
       "issue_size_cr": 1842,
-      "gmp": 4,
-      "expected_listing_price": 176,
-      "expected_gain_percent": 2.3,
+      "gmp": 1,
+      "expected_listing_price": 173,
+      "expected_gain_percent": 0.6,
       "overall_score": 7,
-      "listing_gain_score": 5,
+      "listing_gain_score": 4,
       "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
+        "Strong Technical Capabilities",
         "Government Support"
       ],
       "risks": [
@@ -130,21 +130,21 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 31,
+      "lot_size": 35,
       "issue_size_cr": 400,
       "gmp": 0,
       "expected_listing_price": 320,
       "expected_gain_percent": 0,
       "overall_score": 6,
-      "listing_gain_score": 4,
+      "listing_gain_score": 3,
       "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Innovative Products",
+        "Experienced Management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Competition",
+        "Regulatory Risks"
       ]
     },
     {
@@ -159,7 +159,7 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 100,
+      "lot_size": 10000,
       "issue_size_cr": 6000,
       "gmp": 3,
       "expected_listing_price": 103,
@@ -168,12 +168,12 @@
       "listing_gain_score": 5,
       "long_term_score": 8,
       "strengths": [
-        "Strong Infrastructure Portfolio",
-        "Stable Cash Flows"
+        "Diversified Asset Portfolio",
+        "Regular Income"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Interest Rate Risks"
+        "Interest Rate Risks",
+        "Credit Risks"
       ]
     },
     {
@@ -188,21 +188,21 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 25,
+      "lot_size": 22,
       "issue_size_cr": 306,
       "gmp": 0,
       "expected_listing_price": 519,
       "expected_gain_percent": 0,
       "overall_score": 6,
-      "listing_gain_score": 4,
+      "listing_gain_score": 3,
       "long_term_score": 7,
       "strengths": [
-        "Strong Technical Expertise",
-        "Innovative Products"
+        "Innovative Solutions",
+        "Experienced Team"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Competition",
+        "Technological Risks"
       ]
     },
     {
@@ -217,21 +217,21 @@
       "listing_date": null,
       "price_band_min": 116,
       "price_band_max": 122,
-      "lot_size": 41,
+      "lot_size": 74,
       "issue_size_cr": 255,
       "gmp": 122,
       "expected_listing_price": 244,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 8,
-      "long_term_score": 7,
+      "listing_gain_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Established Brand",
+        "Diversified Product Range"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Fluctuations",
+        "Competition from Imports"
       ]
     },
     {
@@ -253,14 +253,14 @@
       "expected_gain_percent": 100,
       "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 8,
+      "long_term_score": 9,
       "strengths": [
-        "Strong Technical Expertise",
-        "Innovative Products"
+        "Innovative Products",
+        "Experienced Management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Competition",
+        "Technological Risks"
       ]
     },
     {
@@ -275,21 +275,21 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 22,
+      "lot_size": 40,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 8,
-      "long_term_score": 7,
+      "listing_gain_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Established Brand",
+        "Diversified Product Range"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Fluctuations",
+        "Competition from Imports"
       ]
     },
     {
@@ -304,21 +304,21 @@
       "listing_date": null,
       "price_band_min": 367,
       "price_band_max": 386,
-      "lot_size": 26,
+      "lot_size": 29,
       "issue_size_cr": 380,
       "gmp": 386,
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 8,
-      "long_term_score": 7,
+      "listing_gain_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Established Brand",
+        "Diversified Product Range"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Fluctuations",
+        "Competition from Imports"
       ]
     },
     {
@@ -333,21 +333,21 @@
       "listing_date": null,
       "price_band_min": 1000,
       "price_band_max": 1053,
-      "lot_size": 10,
+      "lot_size": 9,
       "issue_size_cr": 3100,
       "gmp": 1053,
       "expected_listing_price": 2106,
       "expected_gain_percent": 100,
       "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 8,
+      "long_term_score": 9,
       "strengths": [
-        "Strong Technical Expertise",
-        "Innovative Products"
+        "Innovative Solutions",
+        "Experienced Team"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Market Competition",
+        "Technological Risks"
       ]
     }
   ]
