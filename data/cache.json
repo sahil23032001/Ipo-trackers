@@ -1,5 +1,5 @@
 {
-  "ts": 1774346808126,
+  "ts": 1774351681354,
   "date": "2026-03-24",
   "ipos": [
     {
@@ -24,7 +24,7 @@
       "long_term_score": 7,
       "strengths": [
         "Experienced Management",
-        "Growing Demand"
+        "Strong Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
@@ -52,12 +52,12 @@
       "listing_gain_score": 3,
       "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Strong R&D Capabilities",
+        "Diversified Product Portfolio"
       ],
       "risks": [
         "Regulatory Risks",
-        "Market Competition"
+        "Dependence on Few Products"
       ]
     },
     {
@@ -65,7 +65,7 @@
       "company_name": "Amir Chand Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Textiles",
+      "sector": "Industrial Equipment",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
@@ -81,12 +81,12 @@
       "listing_gain_score": 5,
       "long_term_score": 7,
       "strengths": [
-        "Established Brand",
-        "Diversified Product Portfolio"
+        "Experienced Management",
+        "Strong Distribution Network"
       ],
       "risks": [
-        "Market Competition",
-        "Raw Material Costs"
+        "Intense Competition",
+        "Dependence on Few Customers"
       ]
     },
     {
@@ -110,12 +110,12 @@
       "listing_gain_score": 4,
       "long_term_score": 8,
       "strengths": [
-        "Experienced Team",
-        "Strong Order Book"
+        "Strong Technical Capabilities",
+        "Diversified Service Portfolio"
       ],
       "risks": [
         "Regulatory Risks",
-        "Market Competition"
+        "Dependence on Government Contracts"
       ]
     },
     {
@@ -139,12 +139,12 @@
       "listing_gain_score": 4,
       "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Management"
+        "Strong R&D Capabilities",
+        "Diversified Product Portfolio"
       ],
       "risks": [
         "Regulatory Risks",
-        "Market Competition"
+        "Dependence on Few Products"
       ]
     },
     {
@@ -168,12 +168,12 @@
       "listing_gain_score": 5,
       "long_term_score": 8,
       "strengths": [
-        "Strong Asset Portfolio",
-        "Experienced Management"
+        "Strong Sponsor Group",
+        "Diversified Asset Portfolio"
       ],
       "risks": [
         "Regulatory Risks",
-        "Market Competition"
+        "Dependence on Few Assets"
       ]
     },
     {
@@ -197,12 +197,12 @@
       "listing_gain_score": 9,
       "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Strong Technical Capabilities",
+        "Diversified Service Portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Intense Competition",
+        "Dependence on Few Customers"
       ]
     },
     {
@@ -226,12 +226,12 @@
       "listing_gain_score": 8,
       "long_term_score": 7,
       "strengths": [
-        "Established Brand",
+        "Strong Manufacturing Capabilities",
         "Diversified Product Portfolio"
       ],
       "risks": [
-        "Market Competition",
-        "Raw Material Costs"
+        "Regulatory Risks",
+        "Dependence on Few Products"
       ]
     },
     {
@@ -255,12 +255,12 @@
       "listing_gain_score": 9,
       "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Strong Technical Capabilities",
+        "Diversified Product Portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Intense Competition",
+        "Dependence on Few Customers"
       ]
     },
     {
@@ -284,12 +284,12 @@
       "listing_gain_score": 8,
       "long_term_score": 7,
       "strengths": [
-        "Established Brand",
-        "Diversified Product Portfolio"
+        "Experienced Management",
+        "Strong Distribution Network"
       ],
       "risks": [
-        "Market Competition",
-        "Raw Material Costs"
+        "Intense Competition",
+        "Dependence on Few Customers"
       ]
     },
     {
@@ -313,12 +313,12 @@
       "listing_gain_score": 8,
       "long_term_score": 7,
       "strengths": [
-        "Established Brand",
-        "Diversified Product Portfolio"
+        "Strong Brand Portfolio",
+        "Diversified Distribution Network"
       ],
       "risks": [
-        "Market Competition",
-        "Raw Material Costs"
+        "Regulatory Risks",
+        "Dependence on Few Products"
       ]
     },
     {
@@ -342,12 +342,12 @@
       "listing_gain_score": 9,
       "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Strong Technical Capabilities",
+        "Diversified Service Portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Market Competition"
+        "Intense Competition",
+        "Dependence on Few Customers"
       ]
     }
   ]
