@@ -1,6 +1,6 @@
 {
-  "ts": 1774611873149,
-  "date": "2026-03-27",
+  "ts": 1774845997548,
+  "date": "2026-03-30",
   "ipos": [
     {
       "ipo_name": "Powerica IPO",
@@ -14,21 +14,21 @@
       "listing_date": null,
       "price_band_min": 375,
       "price_band_max": 395,
-      "lot_size": 37,
+      "lot_size": 34,
       "issue_size_cr": 1100,
-      "gmp": 1,
-      "expected_listing_price": 396,
-      "expected_gain_percent": 0.3,
+      "gmp": 6,
+      "expected_listing_price": 401,
+      "expected_gain_percent": 1.5,
       "overall_score": 6,
       "listing_gain_score": 4,
       "long_term_score": 7,
       "strengths": [
-        "Experienced Management",
-        "Growing Demand"
+        "Established brand",
+        "Growing demand"
       ],
       "risks": [
-        "Intense Competition",
-        "Regulatory Risks"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
@@ -43,7 +43,7 @@
       "listing_date": null,
       "price_band_min": 372,
       "price_band_max": 392,
-      "lot_size": 38,
+      "lot_size": 32,
       "issue_size_cr": 409,
       "gmp": 0,
       "expected_listing_price": 392,
@@ -52,12 +52,12 @@
       "listing_gain_score": 3,
       "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
-        "Experienced Team"
+        "Diversified product portfolio",
+        "Experienced management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Dependence on few products",
+        "Regulatory risks"
       ]
     },
     {
@@ -74,24 +74,24 @@
       "price_band_max": 212,
       "lot_size": 47,
       "issue_size_cr": 440,
-      "gmp": 8,
-      "expected_listing_price": 220,
-      "expected_gain_percent": 3.8,
-      "overall_score": 7,
-      "listing_gain_score": 6,
-      "long_term_score": 8,
+      "gmp": 3,
+      "expected_listing_price": 215,
+      "expected_gain_percent": 1.4,
+      "overall_score": 5,
+      "listing_gain_score": 4,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Brand Presence",
-        "Diversified Product Portfolio"
+        "Established brand",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Competition from Cheaper Imports",
-        "Fluctuating Raw Material Prices"
+        "Intense competition",
+        "Raw material price volatility"
       ]
     },
     {
       "ipo_name": "Central Mine Planning IPO",
-      "company_name": "Central Mine Planning and Design Institute Limited",
+      "company_name": "Central Mine Planning & Design Institute Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Mining",
@@ -103,19 +103,19 @@
       "price_band_max": 172,
       "lot_size": 58,
       "issue_size_cr": 1842,
-      "gmp": 9,
-      "expected_listing_price": 181,
-      "expected_gain_percent": 5.2,
-      "overall_score": 8,
-      "listing_gain_score": 7,
-      "long_term_score": 9,
+      "gmp": 5,
+      "expected_listing_price": 177,
+      "expected_gain_percent": 2.9,
+      "overall_score": 7,
+      "listing_gain_score": 6,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
-        "Government Support"
+        "Monopoly business",
+        "Experienced management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Environmental Concerns"
+        "Dependence on government contracts",
+        "Regulatory risks"
       ]
     },
     {
@@ -135,16 +135,16 @@
       "gmp": 320,
       "expected_listing_price": 640,
       "expected_gain_percent": 100,
-      "overall_score": 9,
+      "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Product Portfolio",
-        "Growing Demand"
+        "Diversified product portfolio",
+        "Growing demand"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Dependence on few products",
+        "Regulatory risks"
       ]
     },
     {
@@ -159,21 +159,21 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 1000,
+      "lot_size": 10000,
       "issue_size_cr": 6000,
       "gmp": 100,
       "expected_listing_price": 200,
       "expected_gain_percent": 100,
-      "overall_score": 8,
+      "overall_score": 6,
       "listing_gain_score": 8,
-      "long_term_score": 9,
+      "long_term_score": 7,
       "strengths": [
-        "Strong Sponsor Support",
-        "Diversified Asset Portfolio"
+        "Stable cash flows",
+        "Experienced management"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Interest Rate Risks"
+        "Dependence on few assets",
+        "Regulatory risks"
       ]
     },
     {
@@ -188,21 +188,21 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 19,
+      "lot_size": 20,
       "issue_size_cr": 306,
       "gmp": 519,
       "expected_listing_price": 1038,
       "expected_gain_percent": 100,
-      "overall_score": 9,
+      "overall_score": 7,
       "listing_gain_score": 9,
-      "long_term_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand"
+        "Diversified product portfolio",
+        "Growing demand"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
@@ -222,16 +222,16 @@
       "gmp": 122,
       "expected_listing_price": 244,
       "expected_gain_percent": 100,
-      "overall_score": 8,
+      "overall_score": 6,
       "listing_gain_score": 8,
-      "long_term_score": 8,
+      "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
-        "Growing Demand"
+        "Established brand",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Cheaper Imports"
+        "Dependence on few products",
+        "Regulatory risks"
       ]
     },
     {
@@ -251,16 +251,16 @@
       "gmp": 1352,
       "expected_listing_price": 2704,
       "expected_gain_percent": 100,
-      "overall_score": 9,
+      "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand"
+        "Diversified product portfolio",
+        "Growing demand"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Dependence on few products",
+        "Regulatory risks"
       ]
     },
     {
@@ -280,16 +280,16 @@
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
-      "overall_score": 8,
+      "overall_score": 7,
       "listing_gain_score": 8,
-      "long_term_score": 8,
+      "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
-        "Growing Demand"
+        "Established brand",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Intense competition",
+        "Regulatory risks"
       ]
     },
     {
@@ -309,16 +309,16 @@
       "gmp": 386,
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
-      "overall_score": 8,
+      "overall_score": 6,
       "listing_gain_score": 8,
-      "long_term_score": 8,
+      "long_term_score": 7,
       "strengths": [
-        "Strong Brand Presence",
-        "Growing Demand"
+        "Established brand",
+        "Diversified product portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Dependence on few products",
+        "Regulatory risks"
       ]
     },
     {
@@ -338,16 +338,16 @@
       "gmp": 1053,
       "expected_listing_price": 2106,
       "expected_gain_percent": 100,
-      "overall_score": 9,
+      "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand"
+        "Diversified product portfolio",
+        "Growing demand"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Dependence on few products",
+        "Regulatory risks"
       ]
     }
   ]
