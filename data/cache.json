@@ -1,6 +1,6 @@
 {
-  "ts": 1775103071392,
-  "date": "2026-04-02",
+  "ts": 1775207092721,
+  "date": "2026-04-03",
   "ipos": [
     {
       "ipo_name": "Propshare Celestia IPO",
@@ -45,19 +45,19 @@
       "price_band_max": 395,
       "lot_size": 35,
       "issue_size_cr": 1100,
-      "gmp": 10,
-      "expected_listing_price": 405,
-      "expected_gain_percent": 2.5,
+      "gmp": 395,
+      "expected_listing_price": 790,
+      "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 6,
-      "long_term_score": 8,
+      "listing_gain_score": 8,
+      "long_term_score": 6,
       "strengths": [
         "Established Brand",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Raw Material Price Volatility"
+        "Economic Downturn"
       ]
     },
     {
@@ -74,15 +74,15 @@
       "price_band_max": 392,
       "lot_size": 30,
       "issue_size_cr": 409,
-      "gmp": 0,
-      "expected_listing_price": 392,
-      "expected_gain_percent": 0,
-      "overall_score": 5,
-      "listing_gain_score": 4,
+      "gmp": 392,
+      "expected_listing_price": 784,
+      "expected_gain_percent": 100,
+      "overall_score": 7,
+      "listing_gain_score": 8,
       "long_term_score": 6,
       "strengths": [
-        "Strong R&D",
-        "Growing Demand for Parenterals"
+        "Strong Product Pipeline",
+        "Experienced Management"
       ],
       "risks": [
         "Regulatory Risks",
@@ -94,7 +94,7 @@
       "company_name": "Amir Chand Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Textiles",
+      "sector": "Industrial Equipment",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
@@ -103,24 +103,24 @@
       "price_band_max": 212,
       "lot_size": 50,
       "issue_size_cr": 440,
-      "gmp": 5,
-      "expected_listing_price": 217,
-      "expected_gain_percent": 2.4,
+      "gmp": 212,
+      "expected_listing_price": 424,
+      "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 5,
-      "long_term_score": 7,
+      "listing_gain_score": 7,
+      "long_term_score": 5,
       "strengths": [
-        "Established Brand",
+        "Established Customer Base",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Raw Material Price Volatility"
+        "Economic Downturn"
       ]
     },
     {
       "ipo_name": "Central Mine Planning IPO",
-      "company_name": "Central Mine Planning and Design Institute Limited",
+      "company_name": "Central Mine Planning Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
       "sector": "Mining",
@@ -135,12 +135,12 @@
       "gmp": 320,
       "expected_listing_price": 492,
       "expected_gain_percent": 186,
-      "overall_score": 8,
-      "listing_gain_score": 9,
-      "long_term_score": 8,
+      "overall_score": 7,
+      "listing_gain_score": 8,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand for Mining Services"
+        "Strong Management",
+        "Growing Demand"
       ],
       "risks": [
         "Regulatory Risks",
@@ -166,10 +166,10 @@
       "expected_gain_percent": 100,
       "overall_score": 7,
       "listing_gain_score": 8,
-      "long_term_score": 7,
+      "long_term_score": 6,
       "strengths": [
-        "Strong R&D",
-        "Growing Demand for Crop Protection Chemicals"
+        "Strong Product Pipeline",
+        "Experienced Management"
       ],
       "risks": [
         "Regulatory Risks",
@@ -193,12 +193,12 @@
       "gmp": 100,
       "expected_listing_price": 200,
       "expected_gain_percent": 100,
-      "overall_score": 8,
-      "listing_gain_score": 9,
-      "long_term_score": 8,
+      "overall_score": 6,
+      "listing_gain_score": 7,
+      "long_term_score": 5,
       "strengths": [
-        "Strong Portfolio of Infrastructure Assets",
-        "Regular Income Distribution"
+        "Established Track Record",
+        "Diversified Asset Portfolio"
       ],
       "risks": [
         "Regulatory Risks",
@@ -210,7 +210,7 @@
       "company_name": "Innovision Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Electronics",
+      "sector": "Technology",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
@@ -224,10 +224,10 @@
       "expected_gain_percent": 100,
       "overall_score": 7,
       "listing_gain_score": 8,
-      "long_term_score": 7,
+      "long_term_score": 6,
       "strengths": [
-        "Strong R&D",
-        "Growing Demand for Electronic Components"
+        "Strong Product Pipeline",
+        "Experienced Management"
       ],
       "risks": [
         "Regulatory Risks",
@@ -253,14 +253,14 @@
       "expected_gain_percent": 100,
       "overall_score": 6,
       "listing_gain_score": 7,
-      "long_term_score": 6,
+      "long_term_score": 5,
       "strengths": [
-        "Established Brand",
+        "Established Customer Base",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Raw Material Price Volatility"
+        "Economic Downturn"
       ]
     },
     {
@@ -268,7 +268,7 @@
       "company_name": "SEDEMAC Mechatronics Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Automobile",
+      "sector": "Automotive",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
@@ -280,12 +280,12 @@
       "gmp": 1352,
       "expected_listing_price": 2704,
       "expected_gain_percent": 100,
-      "overall_score": 8,
-      "listing_gain_score": 9,
-      "long_term_score": 8,
+      "overall_score": 7,
+      "listing_gain_score": 8,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand for Mechatronics Solutions"
+        "Strong Product Pipeline",
+        "Experienced Management"
       ],
       "risks": [
         "Regulatory Risks",
@@ -309,16 +309,16 @@
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 8,
-      "long_term_score": 7,
+      "overall_score": 6,
+      "listing_gain_score": 7,
+      "long_term_score": 5,
       "strengths": [
-        "Strong R&D",
-        "Growing Demand for Industrial Equipment"
+        "Established Customer Base",
+        "Diversified Product Portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Competition from Established Players"
+        "Intense Competition",
+        "Economic Downturn"
       ]
     },
     {
@@ -340,14 +340,14 @@
       "expected_gain_percent": 100,
       "overall_score": 6,
       "listing_gain_score": 7,
-      "long_term_score": 6,
+      "long_term_score": 5,
       "strengths": [
         "Established Brand",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Raw Material Price Volatility"
+        "Economic Downturn"
       ]
     }
   ]
