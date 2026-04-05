@@ -1,6 +1,6 @@
 {
-  "ts": 1775207092721,
-  "date": "2026-04-03",
+  "ts": 1775387557795,
+  "date": "2026-04-05",
   "ipos": [
     {
       "ipo_name": "Propshare Celestia IPO",
@@ -57,7 +57,7 @@
       ],
       "risks": [
         "Intense Competition",
-        "Economic Downturn"
+        "Raw Material Price Volatility"
       ]
     },
     {
@@ -77,8 +77,8 @@
       "gmp": 392,
       "expected_listing_price": 784,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 8,
+      "overall_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
         "Strong Product Pipeline",
@@ -107,15 +107,15 @@
       "expected_listing_price": 424,
       "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 7,
-      "long_term_score": 5,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
         "Established Customer Base",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Economic Downturn"
+        "Raw Material Price Volatility"
       ]
     },
     {
@@ -144,7 +144,7 @@
       ],
       "risks": [
         "Regulatory Risks",
-        "Competition from Established Players"
+        "Commodity Price Volatility"
       ]
     },
     {
@@ -164,11 +164,11 @@
       "gmp": 320,
       "expected_listing_price": 640,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 8,
+      "overall_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
-        "Strong Product Pipeline",
+        "Strong Product Portfolio",
         "Experienced Management"
       ],
       "risks": [
@@ -188,16 +188,16 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 10000,
+      "lot_size": 1000,
       "issue_size_cr": 6000,
       "gmp": 100,
       "expected_listing_price": 200,
       "expected_gain_percent": 100,
-      "overall_score": 6,
-      "listing_gain_score": 7,
-      "long_term_score": 5,
+      "overall_score": 7,
+      "listing_gain_score": 8,
+      "long_term_score": 6,
       "strengths": [
-        "Established Track Record",
+        "Strong Sponsor",
         "Diversified Asset Portfolio"
       ],
       "risks": [
@@ -222,11 +222,11 @@
       "gmp": 519,
       "expected_listing_price": 1038,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 8,
+      "overall_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
-        "Strong Product Pipeline",
+        "Strong Product Portfolio",
         "Experienced Management"
       ],
       "risks": [
@@ -252,15 +252,15 @@
       "expected_listing_price": 244,
       "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 7,
-      "long_term_score": 5,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
         "Established Customer Base",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Economic Downturn"
+        "Raw Material Price Volatility"
       ]
     },
     {
@@ -268,7 +268,7 @@
       "company_name": "SEDEMAC Mechatronics Limited",
       "exchange": "BSE",
       "ipo_type": "Mainboard",
-      "sector": "Automotive",
+      "sector": "Automobile",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
@@ -284,8 +284,8 @@
       "listing_gain_score": 8,
       "long_term_score": 6,
       "strengths": [
-        "Strong Product Pipeline",
-        "Experienced Management"
+        "Strong Management",
+        "Growing Demand"
       ],
       "risks": [
         "Regulatory Risks",
@@ -311,14 +311,14 @@
       "expected_gain_percent": 100,
       "overall_score": 6,
       "listing_gain_score": 7,
-      "long_term_score": 5,
+      "long_term_score": 6,
       "strengths": [
         "Established Customer Base",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Economic Downturn"
+        "Raw Material Price Volatility"
       ]
     },
     {
@@ -339,15 +339,15 @@
       "expected_listing_price": 772,
       "expected_gain_percent": 100,
       "overall_score": 6,
-      "listing_gain_score": 7,
-      "long_term_score": 5,
+      "listing_gain_score": 6,
+      "long_term_score": 6,
       "strengths": [
         "Established Brand",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "Intense Competition",
-        "Economic Downturn"
+        "Raw Material Price Volatility"
       ]
     }
   ]
