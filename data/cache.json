@@ -1,6 +1,6 @@
 {
-  "ts": 1775452327618,
-  "date": "2026-04-06",
+  "ts": 1775538452137,
+  "date": "2026-04-07",
   "ipos": [
     {
       "ipo_name": "Propshare Celestia IPO",
@@ -35,7 +35,7 @@
       "ipo_name": "Om Power Transmission IPO",
       "company_name": "Om Power Transmission Limited",
       "exchange": "BSE",
-      "ipo_type": "Mainboard",
+      "ipo_type": "SME",
       "sector": "Power",
       "status": "Upcoming",
       "ipo_open_date": null,
@@ -43,16 +43,16 @@
       "listing_date": null,
       "price_band_min": 166,
       "price_band_max": 175,
-      "lot_size": 100,
+      "lot_size": 1000,
       "issue_size_cr": 150,
-      "gmp": 0,
-      "expected_listing_price": 175,
-      "expected_gain_percent": 0,
+      "gmp": 1,
+      "expected_listing_price": 176,
+      "expected_gain_percent": 0.6,
       "overall_score": 5,
       "listing_gain_score": 4,
       "long_term_score": 6,
       "strengths": [
-        "Experienced Management",
+        "Experienced Team",
         "Growing Power Demand"
       ],
       "risks": [
@@ -72,21 +72,21 @@
       "listing_date": null,
       "price_band_min": 375,
       "price_band_max": 395,
-      "lot_size": 30,
+      "lot_size": 35,
       "issue_size_cr": 1100,
       "gmp": 395,
       "expected_listing_price": 790,
       "expected_gain_percent": 100,
       "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 7,
+      "long_term_score": 8,
       "strengths": [
         "Strong Order Book",
         "Diversified Product Portfolio"
       ],
       "risks": [
         "High Debt",
-        "Dependence on Few Clients"
+        "Competition from Established Players"
       ]
     },
     {
@@ -101,50 +101,50 @@
       "listing_date": null,
       "price_band_min": 372,
       "price_band_max": 392,
-      "lot_size": 25,
+      "lot_size": 30,
       "issue_size_cr": 409,
       "gmp": 392,
       "expected_listing_price": 784,
       "expected_gain_percent": 100,
       "overall_score": 7,
       "listing_gain_score": 8,
-      "long_term_score": 6,
+      "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
+        "Strong Product Pipeline",
         "Experienced Management"
       ],
       "risks": [
-        "Intense Competition",
-        "Regulatory Risks"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
       "ipo_name": "Amir Chand IPO",
       "company_name": "Amir Chand Limited",
       "exchange": "BSE",
-      "ipo_type": "Mainboard",
-      "sector": "Trading",
+      "ipo_type": "SME",
+      "sector": "Textiles",
       "status": "Upcoming",
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
       "price_band_min": 201,
       "price_band_max": 212,
-      "lot_size": 50,
+      "lot_size": 500,
       "issue_size_cr": 440,
       "gmp": 212,
       "expected_listing_price": 424,
       "expected_gain_percent": 100,
       "overall_score": 6,
       "listing_gain_score": 7,
-      "long_term_score": 5,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Distribution Network",
+        "Strong Brand Presence",
         "Experienced Management"
       ],
       "risks": [
         "Intense Competition",
-        "Dependence on Few Suppliers"
+        "Regulatory Risks"
       ]
     },
     {
@@ -159,21 +159,21 @@
       "listing_date": null,
       "price_band_min": 163,
       "price_band_max": 172,
-      "lot_size": 40,
+      "lot_size": 50,
       "issue_size_cr": 1842,
       "gmp": 320,
       "expected_listing_price": 492,
       "expected_gain_percent": 86,
-      "overall_score": 7,
-      "listing_gain_score": 8,
-      "long_term_score": 6,
+      "overall_score": 8,
+      "listing_gain_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand"
+        "Strong Order Book",
+        "Diversified Product Portfolio"
       ],
       "risks": [
-        "Regulatory Risks",
-        "Dependence on Few Clients"
+        "High Debt",
+        "Competition from Established Players"
       ]
     },
     {
@@ -188,26 +188,26 @@
       "listing_date": null,
       "price_band_min": 304,
       "price_band_max": 320,
-      "lot_size": 35,
+      "lot_size": 40,
       "issue_size_cr": 400,
       "gmp": 320,
       "expected_listing_price": 640,
       "expected_gain_percent": 100,
       "overall_score": 7,
       "listing_gain_score": 8,
-      "long_term_score": 6,
+      "long_term_score": 7,
       "strengths": [
-        "Strong Product Portfolio",
+        "Strong Product Pipeline",
         "Experienced Management"
       ],
       "risks": [
-        "Intense Competition",
-        "Dependence on Few Suppliers"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
       "ipo_name": "Raajmarg Infra InvIT IPO",
-      "company_name": "Raajmarg Infra InvIT",
+      "company_name": "Raajmarg Infra InvIT Limited",
       "exchange": "BSE",
       "ipo_type": "InvIT",
       "sector": "Infrastructure",
@@ -217,21 +217,21 @@
       "listing_date": null,
       "price_band_min": 99,
       "price_band_max": 100,
-      "lot_size": 1000,
+      "lot_size": 10000,
       "issue_size_cr": 6000,
       "gmp": 100,
       "expected_listing_price": 200,
       "expected_gain_percent": 100,
-      "overall_score": 6,
-      "listing_gain_score": 7,
-      "long_term_score": 5,
+      "overall_score": 8,
+      "listing_gain_score": 9,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Asset Base",
-        "Regular Income"
+        "Strong Order Book",
+        "Diversified Product Portfolio"
       ],
       "risks": [
-        "Interest Rate Risks",
-        "Regulatory Risks"
+        "High Debt",
+        "Competition from Established Players"
       ]
     },
     {
@@ -246,28 +246,28 @@
       "listing_date": null,
       "price_band_min": 494,
       "price_band_max": 519,
-      "lot_size": 20,
+      "lot_size": 25,
       "issue_size_cr": 306,
       "gmp": 519,
       "expected_listing_price": 1038,
       "expected_gain_percent": 100,
-      "overall_score": 8,
-      "listing_gain_score": 9,
+      "overall_score": 7,
+      "listing_gain_score": 8,
       "long_term_score": 7,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand"
+        "Strong Product Pipeline",
+        "Experienced Management"
       ],
       "risks": [
-        "Intense Competition",
-        "Dependence on Few Clients"
+        "Regulatory Risks",
+        "Competition from Established Players"
       ]
     },
     {
       "ipo_name": "Rajputana Stainless IPO",
       "company_name": "Rajputana Stainless Limited",
       "exchange": "BSE",
-      "ipo_type": "Mainboard",
+      "ipo_type": "SME",
       "sector": "Metals",
       "status": "Upcoming",
       "ipo_open_date": null,
@@ -275,21 +275,21 @@
       "listing_date": null,
       "price_band_min": 116,
       "price_band_max": 122,
-      "lot_size": 50,
+      "lot_size": 600,
       "issue_size_cr": 255,
       "gmp": 122,
       "expected_listing_price": 244,
       "expected_gain_percent": 100,
       "overall_score": 6,
       "listing_gain_score": 7,
-      "long_term_score": 5,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
+        "Strong Brand Presence",
         "Experienced Management"
       ],
       "risks": [
         "Intense Competition",
-        "Dependence on Few Suppliers"
+        "Regulatory Risks"
       ]
     },
     {
@@ -311,21 +311,21 @@
       "expected_gain_percent": 100,
       "overall_score": 8,
       "listing_gain_score": 9,
-      "long_term_score": 7,
+      "long_term_score": 8,
       "strengths": [
-        "Strong Technical Expertise",
-        "Growing Demand"
+        "Strong Order Book",
+        "Diversified Product Portfolio"
       ],
       "risks": [
-        "Intense Competition",
-        "Dependence on Few Clients"
+        "High Debt",
+        "Competition from Established Players"
       ]
     },
     {
       "ipo_name": "Omnitech Engineering IPO",
       "company_name": "Omnitech Engineering Limited",
       "exchange": "BSE",
-      "ipo_type": "Mainboard",
+      "ipo_type": "SME",
       "sector": "Engineering",
       "status": "Upcoming",
       "ipo_open_date": null,
@@ -333,21 +333,21 @@
       "listing_date": null,
       "price_band_min": 216,
       "price_band_max": 227,
-      "lot_size": 40,
+      "lot_size": 400,
       "issue_size_cr": 583,
       "gmp": 227,
       "expected_listing_price": 454,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 8,
+      "overall_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 6,
       "strengths": [
-        "Strong Product Portfolio",
+        "Strong Brand Presence",
         "Experienced Management"
       ],
       "risks": [
         "Intense Competition",
-        "Dependence on Few Suppliers"
+        "Regulatory Risks"
       ]
     }
   ]
