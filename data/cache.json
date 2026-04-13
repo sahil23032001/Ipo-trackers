@@ -1,6 +1,6 @@
 {
-  "ts": 1775812558283,
-  "date": "2026-04-10",
+  "ts": 1776059039137,
+  "date": "2026-04-13",
   "ipos": [
     {
       "ipo_name": "Citius Transnet InvIT IPO",
@@ -12,15 +12,15 @@
       "ipo_open_date": null,
       "ipo_close_date": null,
       "listing_date": null,
-      "price_band_min": null,
-      "price_band_max": null,
+      "price_band_min": 99,
+      "price_band_max": 100,
       "lot_size": 1000,
       "issue_size_cr": 1105,
       "gmp": 0,
-      "expected_listing_price": null,
-      "expected_gain_percent": null,
+      "expected_listing_price": 100,
+      "expected_gain_percent": 0,
       "overall_score": 6,
-      "listing_gain_score": 5,
+      "listing_gain_score": 4,
       "long_term_score": 7,
       "strengths": [
         "Stable Cash Flows",
@@ -48,15 +48,15 @@
       "gmp": 0,
       "expected_listing_price": 1050000,
       "expected_gain_percent": 0,
-      "overall_score": 8,
-      "listing_gain_score": 6,
-      "long_term_score": 8,
+      "overall_score": 5,
+      "listing_gain_score": 3,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Brand",
-        "Experienced Management"
+        "Unique Business Model",
+        "Experienced Founders"
       ],
       "risks": [
-        "Market Risks",
+        "High Valuation",
         "Regulatory Risks"
       ]
     },
@@ -74,18 +74,18 @@
       "price_band_max": 175,
       "lot_size": 1000,
       "issue_size_cr": 150,
-      "gmp": 3,
-      "expected_listing_price": 178,
-      "expected_gain_percent": 1.7,
-      "overall_score": 5,
-      "listing_gain_score": 4,
-      "long_term_score": 6,
+      "gmp": 2,
+      "expected_listing_price": 177,
+      "expected_gain_percent": 1.1,
+      "overall_score": 7,
+      "listing_gain_score": 5,
+      "long_term_score": 8,
       "strengths": [
         "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Competition Risks",
+        "Competition",
         "Regulatory Risks"
       ]
     },
@@ -106,21 +106,21 @@
       "gmp": 395,
       "expected_listing_price": 790,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 8,
+      "overall_score": 8,
+      "listing_gain_score": 9,
       "long_term_score": 7,
       "strengths": [
-        "Strong Financials",
+        "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Market Risks",
-        "Competition Risks"
+        "Competition",
+        "Regulatory Risks"
       ]
     },
     {
       "ipo_name": "Sai Parenteral’s IPO",
-      "company_name": "Sai Parenteral Limited",
+      "company_name": "Sai Parenteral’s Limited",
       "exchange": "BSE",
       "ipo_type": "SME",
       "sector": "Pharmaceuticals",
@@ -135,15 +135,15 @@
       "gmp": 392,
       "expected_listing_price": 784,
       "expected_gain_percent": 100,
-      "overall_score": 6,
-      "listing_gain_score": 7,
+      "overall_score": 7,
+      "listing_gain_score": 8,
       "long_term_score": 6,
       "strengths": [
         "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Competition Risks",
+        "Competition",
         "Regulatory Risks"
       ]
     },
@@ -164,15 +164,15 @@
       "gmp": 212,
       "expected_listing_price": 424,
       "expected_gain_percent": 100,
-      "overall_score": 5,
-      "listing_gain_score": 6,
+      "overall_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 5,
       "strengths": [
         "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Competition Risks",
+        "Competition",
         "Regulatory Risks"
       ]
     },
@@ -192,8 +192,8 @@
       "issue_size_cr": 1842,
       "gmp": 320,
       "expected_listing_price": 492,
-      "expected_gain_percent": 186.6,
-      "overall_score": 6,
+      "expected_gain_percent": 186,
+      "overall_score": 7,
       "listing_gain_score": 8,
       "long_term_score": 6,
       "strengths": [
@@ -201,7 +201,7 @@
         "Experienced Management"
       ],
       "risks": [
-        "Competition Risks",
+        "Competition",
         "Regulatory Risks"
       ]
     },
@@ -223,15 +223,15 @@
       "expected_listing_price": 640,
       "expected_gain_percent": 100,
       "overall_score": 7,
-      "listing_gain_score": 7,
-      "long_term_score": 7,
+      "listing_gain_score": 8,
+      "long_term_score": 6,
       "strengths": [
-        "Strong Financials",
+        "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Market Risks",
-        "Competition Risks"
+        "Competition",
+        "Regulatory Risks"
       ]
     },
     {
@@ -280,16 +280,16 @@
       "gmp": 519,
       "expected_listing_price": 1038,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 7,
+      "overall_score": 8,
+      "listing_gain_score": 9,
       "long_term_score": 7,
       "strengths": [
-        "Strong Financials",
+        "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Market Risks",
-        "Competition Risks"
+        "Competition",
+        "Regulatory Risks"
       ]
     },
     {
@@ -309,15 +309,15 @@
       "gmp": 122,
       "expected_listing_price": 244,
       "expected_gain_percent": 100,
-      "overall_score": 5,
-      "listing_gain_score": 5,
+      "overall_score": 6,
+      "listing_gain_score": 7,
       "long_term_score": 5,
       "strengths": [
         "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Competition Risks",
+        "Competition",
         "Regulatory Risks"
       ]
     },
@@ -338,16 +338,16 @@
       "gmp": 1352,
       "expected_listing_price": 2704,
       "expected_gain_percent": 100,
-      "overall_score": 7,
-      "listing_gain_score": 7,
+      "overall_score": 8,
+      "listing_gain_score": 9,
       "long_term_score": 7,
       "strengths": [
-        "Strong Financials",
+        "Growing Demand",
         "Experienced Management"
       ],
       "risks": [
-        "Market Risks",
-        "Competition Risks"
+        "Competition",
+        "Regulatory Risks"
       ]
     }
   ]
